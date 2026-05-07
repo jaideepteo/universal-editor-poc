@@ -530,12 +530,12 @@ function decorateSections(main) {
         }
         else if (key === 'cssClass' || key === 'class' || key === 'className') {
           value.split(',')
-          .map((s) => toClassName(s.trim()))
-          .filter(Boolean)
-          .forEach((cls) => section.classList.add(cls));
+            .map((s) => toClassName(s.trim()))
+            .filter(Boolean)
+            .forEach((cls) => section.classList.add(cls));
         } else if (key === 'id') {
           section.id = toClassName(String(value).trim());
-        } 
+        }
         else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
