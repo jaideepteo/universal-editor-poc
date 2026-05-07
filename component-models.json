@@ -141,9 +141,9 @@
       },
       {
         "component": "text",
-        "name": "cssClass",
-        "label": "CSS Class",
-        "description": "Extra class(es) to add to the section (comma-separated)"
+        "name": "cssclass",
+        "label": "CSS Class Name",
+        "description": "Extra classes to add to the section (comma-separated)"
       },
       {
         "component": "text",
