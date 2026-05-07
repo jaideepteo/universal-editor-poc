@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #161916;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -52,6 +52,7 @@ header nav[aria-expanded='true'] {
 header nav p {
   margin: 0;
   line-height: 1;
+    color:#fff;
 }
 
 header nav a:any-link {
@@ -231,6 +232,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    color: #fff;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
