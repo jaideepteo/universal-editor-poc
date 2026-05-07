@@ -502,44 +502,58 @@ function decorateSections(main) {
   main.querySelectorAll(':scope > div:not([data-section-status])').forEach((section) => {
     const wrappers = [];
     let defaultContent = false;
+
     [...section.children].forEach((e) => {
       if ((e.tagName === 'DIV' && e.className) || !defaultContent) {
         const wrapper = document.createElement('div');
         wrappers.push(wrapper);
         defaultContent = e.tagName !== 'DIV' || !e.className;
-        if (defaultContent) wrapper.classList.add('default-content-wrapper');
+
+        if (defaultContent) {
+          wrapper.classList.add('default-content-wrapper');
+        }
       }
       wrappers[wrappers.length - 1].append(e);
     });
+
     wrappers.forEach((wrapper) => section.append(wrapper));
+
     section.classList.add('section');
     section.dataset.sectionStatus = 'initialized';
     section.style.display = 'none';
 
-    // Process section metadata
+    // ✅ Process section metadata
     const sectionMeta = section.querySelector('div.section-metadata');
+
     if (sectionMeta) {
       const meta = readBlockConfig(sectionMeta);
+
       Object.keys(meta).forEach((key) => {
+        const value = meta[key]; // ✅ FIX: define value properly
+
         if (key === 'style') {
-          const styles = meta.style
+          const styles = value
             .split(',')
             .filter((style) => style)
             .map((style) => toClassName(style.trim()));
+
           styles.forEach((style) => section.classList.add(style));
-        }
-        else if (key === 'cssClass' || key === 'class' || key === 'className') {
-          value.split(',')
+
+        } else if (key === 'cssClass' || key === 'class' || key === 'className') {
+          value
+            .split(',')
             .map((s) => toClassName(s.trim()))
             .filter(Boolean)
             .forEach((cls) => section.classList.add(cls));
+
         } else if (key === 'id') {
           section.id = toClassName(String(value).trim());
-        }
-        else {
-          section.dataset[toCamelCase(key)] = meta[key];
+
+        } else {
+          section.dataset[toCamelCase(key)] = value;
         }
       });
+
       sectionMeta.parentNode.remove();
     }
   });
