@@ -507,39 +507,37 @@ function decorateSections(main) {
         const wrapper = document.createElement('div');
         wrappers.push(wrapper);
         defaultContent = e.tagName !== 'DIV' || !e.className;
-        if (defaultContent) {
-          wrapper.classList.add('default-content-wrapper');
-        }
+        if (defaultContent) wrapper.classList.add('default-content-wrapper');
       }
       wrappers[wrappers.length - 1].append(e);
     });
     wrappers.forEach((wrapper) => section.append(wrapper));
-
     section.classList.add('section');
     section.dataset.sectionStatus = 'initialized';
     section.style.display = 'none';
+
+    // Process section metadata
     const sectionMeta = section.querySelector('div.section-metadata');
     if (sectionMeta) {
       const meta = readBlockConfig(sectionMeta);
       Object.keys(meta).forEach((key) => {
-        const value = meta[key];
-if (key === 'style') {
-  const styles = value
-    .split(',')
-    .filter((style) => style)
-    .map((style) => toClassName(style.trim()));
-  styles.forEach((style) => section.classList.add(style));
-} else if (key === 'cssClass' || key === 'class' || key === 'className') {
-  value
-    .split(',')
-    .map((s) => toClassName(s.trim()))
-    .filter(Boolean)
-    .forEach((cls) => section.classList.add(cls));
-} else if (key === 'id') {
-  section.id = toClassName(String(value).trim());
-} else {
-  section.dataset[toCamelCase(key)] = value;
-}
+        if (key === 'style') {
+          const styles = value
+            .split(',')
+            .filter((style) => style)
+            .map((style) => toClassName(style.trim()));
+          styles.forEach((style) => section.classList.add(style));
+        } else if (key === 'cssClass' || key === 'class' || key === 'className') {
+          value
+            .split(',')
+            .map((s) => toClassName(s.trim()))
+            .filter(Boolean)
+            .forEach((cls) => section.classList.add(cls));
+        } else if (key === 'id') {
+          section.id = toClassName(String(value).trim());
+        } else {
+          section.dataset[toCamelCase(key)] = value;
+        }
       });
       sectionMeta.parentNode.remove();
     }
