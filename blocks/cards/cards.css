@@ -51,6 +51,9 @@
 .cards .cards-card-image {
   line-height: 0;
 }
+.cards .cards-card-image img:hover {
+  transform: scale(1.3);
+}
 
 .cards > ul > li img {
   width: 100%;
