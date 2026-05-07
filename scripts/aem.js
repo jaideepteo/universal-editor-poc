@@ -527,7 +527,16 @@ function decorateSections(main) {
             .filter((style) => style)
             .map((style) => toClassName(style.trim()));
           styles.forEach((style) => section.classList.add(style));
-        } else {
+        }
+        else if (key === 'cssClass' || key === 'class' || key === 'className') {
+          value.split(',')
+          .map((s) => toClassName(s.trim()))
+          .filter(Boolean)
+          .forEach((cls) => section.classList.add(cls));
+        } else if (key === 'id') {
+          section.id = toClassName(String(value).trim());
+        } 
+        else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
       });
