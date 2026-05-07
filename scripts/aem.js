@@ -528,7 +528,7 @@ function decorateSections(main) {
             .filter((style) => style)
             .map((style) => toClassName(style.trim()));
           styles.forEach((style) => section.classList.add(style));
-        } else if (key === 'cssClass' || key === 'class' || key === 'className') {
+        } else if (key === 'cssclass' || key === 'class' || key === 'className') {
           value
             .split(',')
             .map((s) => toClassName(s.trim()))
