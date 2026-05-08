@@ -21,6 +21,7 @@ footer .footer p {
 
 footer .footer img{
   width: 155px;
+  height: auto;
 }
 
 @media (width >= 769px) {
