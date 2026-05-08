@@ -189,7 +189,6 @@ button {
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
   border-radius: 2.4em;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
@@ -212,6 +211,7 @@ a.button:focus,
 button:hover,
 button:focus {
   background-color: #ff727a;
+  border-color: #ff727a;
   cursor: pointer;
 }
 
@@ -285,7 +285,7 @@ main .section.highlight {
 
 .genpact-intelligence h2
 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom:24px;
 }
 
@@ -305,6 +305,11 @@ main .section.highlight {
     margin-top: 24px;
     max-width: 464px;
   }
+}
+
+.genpact-intelligence .cards-wrapper
+{
+  margin-top: 30px;
 }
 
 
