@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--header-color);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -269,4 +269,9 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  background-color: var(--light-color);
+}
+
+header nav .nav-sections {
+  color: var(--light-color);
 }
