@@ -214,5 +214,117 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "logo",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "logo",
+        "label": "Logo Image",
+        "description": "Upload the logo image file (SVG or PNG recommended).",
+        "valueType": "string",
+        "multi": false,
+        "assetType": "image"
+      },
+      {
+        "component": "text",
+        "name": "logoAlt",
+        "label": "Logo Alt Text",
+        "description": "Accessible description for the logo image.",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Logo Link",
+        "description": "URL or path the logo should link to (e.g., /home).",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "value": "h2",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "button",
+        "label": "Button",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "linkTarget",
+        "label": "Open Link in New Page ?",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
   }
 ]
