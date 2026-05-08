@@ -1,7 +1,4 @@
-//import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default function decorate(block) {
-  console.log('logo executed');
 
   const cols = [...block.children];
 
@@ -15,7 +12,6 @@ export default function decorate(block) {
 
   if (link) {
     newHtml.href = link;
-    //moveInstrumentation(linkEl, newHtml);
   }
 
   // Extract logo image and alt text
@@ -27,8 +23,6 @@ export default function decorate(block) {
 
     const altText = img?.getAttribute('alt') || 'logo';
     img.setAttribute('alt', altText);
-
-    //moveInstrumentation(logoimageEl, picture);
 
     newHtml.appendChild(picture);
   }
