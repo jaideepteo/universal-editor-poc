@@ -198,19 +198,20 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: #ff4f59;
+  color: #161916;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  border: 2px solid #ff4f59;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: #ff727a;
   cursor: pointer;
 }
 
@@ -222,9 +223,9 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  background-color: transparent;
+  border: 2px solid #ff4f59;
+  color: #ff4f59;
 }
 
 main img {
@@ -276,3 +277,34 @@ main .section.highlight {
 .featured-stories h2{
   text-align: center;
 }
+
+.genpact-intelligence p
+{
+  color: #fff;
+}
+
+.genpact-intelligence h2
+{
+  margin-top: 0px;
+  margin-bottom:24px;
+}
+
+.genpact-intelligence h2::after
+{
+  background: linear-gradient(var(--fade-direction,90deg),transparent,var(--transition-point-start,25%),#fff2df,var(--transition-point-end,75%),transparent);
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 20px;
+  max-width: 300px;
+  opacity: .15;
+}
+
+@media (width >= 769px) {
+  .genpact-intelligence h2::after {
+    margin-top: 24px;
+    max-width: 464px;
+  }
+}
+
+
