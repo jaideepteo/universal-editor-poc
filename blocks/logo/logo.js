@@ -35,5 +35,5 @@ export default function decorate(block) {
 
   block.appendChild(newHtml);
 
-  //cols.forEach((col) => col.remove());
+  cols.forEach((col) => col.remove());
 }
