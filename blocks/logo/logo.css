@@ -5,6 +5,7 @@
   --logo-padding: 0;
   --logo-link-color: inherit;
   --logo-link-hover-color: #06c;
+  
   display: inline-block;
   margin: var(--logo-margin);
   padding: var(--logo-padding);
