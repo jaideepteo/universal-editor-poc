@@ -23,8 +23,6 @@
 .logo .logo-link:hover,
 .logo .logo-link:focus-visible {
   color: var(--logo-link-hover-color);
-  outline: 2px solid var(--logo-link-hover-color);
-  outline-offset: 2px;
 }
 
 .logo .logo-link img {

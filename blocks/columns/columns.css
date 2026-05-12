@@ -31,3 +31,14 @@
     order: unset;
   }
 }
+
+.genpact-intelligence .columns>div>div{
+  flex: unset;
+}
+
+@media (width >= 768px) {
+  .genpact-intelligence .columns>div{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
