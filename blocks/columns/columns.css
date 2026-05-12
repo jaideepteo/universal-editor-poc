@@ -38,8 +38,7 @@
 
 @media (width >= 768px) {
   .genpact-intelligence .columns>div{
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
   }
 }
