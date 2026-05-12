@@ -4,6 +4,8 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header nav {
@@ -46,6 +48,13 @@ header nav[aria-expanded='true'] {
   header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
+  }
+}
+
+@media (width >= 1086px) {
+   header .nav-wrapper {
+    max-width: 1440px;
+    padding: 40px 60px;
   }
 }
 
