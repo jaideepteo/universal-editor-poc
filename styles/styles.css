@@ -20,8 +20,8 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: 'Funnel Sans', sans-serif;
-  --heading-font-family: 'Funnel Sans', sans-serif;
+  --body-font-family: roboto, roboto-fallback, sans-serif;
+  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -82,6 +82,10 @@ body {
 
 body.appear {
   display: block;
+}
+
+header {
+  height: var(--nav-height);
 }
 
 header .header,
