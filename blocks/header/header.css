@@ -4,6 +4,9 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 header nav {
@@ -17,7 +20,6 @@ header nav {
   margin: auto;
   max-width: 1248px;
   height: var(--nav-height);
-  padding: 0 24px;
   font-family: var(--body-font-family);
 }
 
@@ -40,12 +42,18 @@ header nav[aria-expanded='true'] {
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 0 32px;
   }
 
   header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
+  }
+}
+
+@media (width >= 1086px) {
+   header .nav-wrapper {
+    max-width: 1440px;
+    padding: 20px 60px;
   }
 }
 
