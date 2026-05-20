@@ -323,7 +323,7 @@
       {
         "component": "tab",
         "label": "Styles",
-        "name": "styles"
+        "name": "stylesTab"
       },
       {
         "component": "select",
@@ -343,8 +343,8 @@
       },
       {
         "component": "select",
-        "name": "styles",
-        "label": "Styles",
+        "name": "style",
+        "label": "Style",
         "valueType": "string",
         "options": [
           {
