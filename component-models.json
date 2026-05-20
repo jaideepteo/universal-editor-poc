@@ -260,17 +260,21 @@
       {
         "component": "tab",
         "label": "Properties",
+        "value": "",
         "name": "properties"
       },
       {
         "component": "text",
         "name": "title",
+        "value": "",
         "label": "Title"
       },
       {
         "component": "select",
         "name": "titleType",
         "label": "Type/Size",
+        "value": "h3",
+        "valueType": "string",
         "options": [
           {
             "name": "h1",
@@ -331,6 +335,7 @@
         "component": "select",
         "name": "color",
         "label": "Color",
+        "value": "",
         "valueType": "string",
         "options": [
           {
@@ -352,6 +357,7 @@
         "name": "style",
         "label": "Style",
         "valueType": "string",
+        "value": "",
         "options": [
           {
             "name": "Faded Border",
