@@ -302,12 +302,14 @@
         "component": "aem-content",
         "name": "link",
         "label": "Link",
+        "value": "",
         "valueType": "string"
       },
       {
         "component": "select",
         "name": "linkTarget",
         "label": "Open Link in new tab ?",
+        "value": "",
         "valueType": "string",
         "options": [
           {
@@ -332,12 +334,16 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Red",
-            "value": "red"
+            "name": "Morning White",
+            "value": "morningWhite"
           },
           {
-            "name": "Black",
-            "value": "black"
+            "name": "Sunrise Cream",
+            "value": "sunriseCream"
+          },
+          {
+            "name": "Sunrise Gold",
+            "value": "sunriseGold"
           }
         ]
       },
@@ -348,12 +354,16 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Yes",
-            "value": "_blank"
+            "name": "Faded Border",
+            "value": "fadedBorder"
           },
           {
-            "name": "no",
-            "value": "_self"
+            "name": "Sunrise Cream",
+            "value": "sunriseCream"
+          },
+          {
+            "name": "Sunrise Gold",
+            "value": "sunriseGold"
           }
         ]
       }
