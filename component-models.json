@@ -331,7 +331,7 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "Color",
         "label": "Color",
         "valueType": "string",
         "options": [
@@ -351,7 +351,7 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "Style",
         "label": "Styles",
         "valueType": "string",
         "options": [
