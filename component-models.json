@@ -253,5 +253,110 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "new-title",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Properties",
+        "name": "properties"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Type/Size",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "titleLink",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleLinkTarget",
+        "label": "Open Link in new tab ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "no",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Styles",
+        "name": "styles"
+      },
+      {
+        "component": "select",
+        "name": "color",
+        "label": "Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Red",
+            "value": "red"
+          },
+          {
+            "name": "Black",
+            "value": "black"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "styles",
+        "label": "Styles",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "no",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
   }
 ]
