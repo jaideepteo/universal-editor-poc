@@ -68,13 +68,13 @@
         },
         {
           "component": "aem-content",
-          "name": "cta_link",
+          "name": "link",
           "label": "Link",
           "valueType": "string"
         },
         {
           "component": "select",
-          "name": "cta_linkTarget",
+          "name": "linkType",
           "label": "Open Link in new tab ?",
           "valueType": "string",
           "options": [
