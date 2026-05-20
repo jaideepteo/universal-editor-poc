@@ -94,29 +94,53 @@
           "name": "stylesTab"
         },
         {
-          "component": "select",
-          "name": "Color",
-          "label": "Color",
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Block Styles",
           "valueType": "string",
           "options": [
             {
-              "name": "Morning White",
-              "value": "morning-white"
+              "name": "Color Morning White",
+              "value": "color-morning-white"
             },
             {
-              "name": "Sunrise Cream",
-              "value": "sunrise-cream"
+              "name": "Color Sunrise Cream",
+              "value": "color-sunrise-cream"
             },
             {
-              "name": "Sunrise Gold",
-              "value": "sunrise-gold"
+              "name": "Color Sunrise Gold",
+              "value": "color-sunrise-gold"
+            },
+            {
+              "name": "Font Faded Border",
+              "value": "font-faded-Border"
+            },
+            {
+              "name": "Font Sunrise Cream",
+              "value": "font-sunrise-Cream"
+            },
+            {
+              "name": "Font Sunrise Gold",
+              "value": "font-sunrise-Gold"
+            },
+            {
+              "name": "Alignment Left",
+              "value": "alignment-left"
+            },
+            {
+              "name": "Alignment Right",
+              "value": "alignment-right"
+            },
+            {
+              "name": "Alignment Center",
+              "value": "alignment-center"
             }
           ]
         },
         {
           "component": "select",
           "name": "Style",
-          "label": "Styles",
+          "label": "Style",
           "valueType": "string",
           "options": [
             {
