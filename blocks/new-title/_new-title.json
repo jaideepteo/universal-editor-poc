@@ -74,7 +74,7 @@
         },
         {
           "component": "select",
-          "name": "linkType",
+          "name": "linkTarget",
           "label": "Open Link in new tab ?",
           "valueType": "string",
           "options": [
