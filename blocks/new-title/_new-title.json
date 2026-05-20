@@ -68,13 +68,13 @@
         },
         {
           "component": "aem-content",
-          "name": "link",
+          "name": "cta_link",
           "label": "Link",
           "valueType": "string"
         },
         {
           "component": "select",
-          "name": "linkType",
+          "name": "cta_linkTarget",
           "label": "Open Link in new tab ?",
           "valueType": "string",
           "options": [
@@ -83,7 +83,7 @@
               "value": "_blank"
             },
             {
-              "name": "no",
+              "name": "No",
               "value": "_self"
             }
           ]
@@ -95,7 +95,7 @@
         },
         {
           "component": "select",
-          "name": "color",
+          "name": "classes",
           "label": "Color",
           "valueType": "string",
           "options": [
