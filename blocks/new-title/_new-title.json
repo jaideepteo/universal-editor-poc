@@ -99,13 +99,8 @@
           "component": "select",
           "name": "color",
           "label": "Color",
-          "value": "none",
           "valueType": "string",
           "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
             {
               "name": "Morning White",
               "value": "morningWhite"
@@ -125,12 +120,7 @@
           "name": "style",
           "label": "Style",
           "valueType": "string",
-          "value": "none",
           "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
             {
               "name": "Faded Border",
               "value": "fadedBorder"
