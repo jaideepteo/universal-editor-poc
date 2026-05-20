@@ -306,14 +306,12 @@
         "component": "aem-content",
         "name": "link",
         "label": "Link",
-        "value": "",
         "valueType": "string"
       },
       {
         "component": "select",
         "name": "linkType",
         "label": "Open Link in new tab ?",
-        "value": "",
         "valueType": "string",
         "options": [
           {
