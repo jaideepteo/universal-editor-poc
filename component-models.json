@@ -337,35 +337,35 @@
         "options": [
           {
             "name": "Morning White",
-            "value": "morningWhite"
+            "value": "morning-white"
           },
           {
             "name": "Sunrise Cream",
-            "value": "sunriseCream"
+            "value": "sunrise-cream"
           },
           {
             "name": "Sunrise Gold",
-            "value": "sunriseGold"
+            "value": "sunrise-gold"
           }
         ]
       },
       {
         "component": "select",
-        "name": "style",
-        "label": "Style",
+        "name": "classes",
+        "label": "Styles",
         "valueType": "string",
         "options": [
           {
             "name": "Faded Border",
-            "value": "fadedBorder"
+            "value": "faded-Border"
           },
           {
             "name": "Sunrise Cream",
-            "value": "sunriseCream"
+            "value": "sunrise-Cream"
           },
           {
             "name": "Sunrise Gold",
-            "value": "sunriseGold"
+            "value": "sunrise-Gold"
           }
         ]
       }
