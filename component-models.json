@@ -265,13 +265,13 @@
       },
       {
         "component": "text",
-        "name": "title",
+        "name": "proprties_title",
         "value": "",
         "label": "Title"
       },
       {
         "component": "select",
-        "name": "titleType",
+        "name": "properties_titleType",
         "label": "Type/Size",
         "value": "h3",
         "valueType": "string",
@@ -304,13 +304,13 @@
       },
       {
         "component": "aem-content",
-        "name": "link",
+        "name": "proprties_link",
         "label": "Link",
         "valueType": "string"
       },
       {
         "component": "select",
-        "name": "linkTarget",
+        "name": "properties_linkTarget",
         "label": "Open Link in new tab ?",
         "valueType": "string",
         "options": [
