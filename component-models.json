@@ -300,13 +300,13 @@
       },
       {
         "component": "aem-content",
-        "name": "titleLink",
+        "name": "link",
         "label": "Link",
         "valueType": "string"
       },
       {
         "component": "select",
-        "name": "titleLinkTarget",
+        "name": "linkTarget",
         "label": "Open Link in new tab ?",
         "valueType": "string",
         "options": [
