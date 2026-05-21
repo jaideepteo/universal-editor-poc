@@ -156,6 +156,17 @@
               "value": "sunrise-Gold"
             }
           ]
+        },
+        {
+          "component": "text",
+          "name": "cssClass",
+          "label": "CSS Class",
+          "description": "Extra class(es) to add to the section (comma-separated)"
+        },
+        {
+          "component": "text",
+          "name": "id",
+          "label": "Section ID"
         }
       ]
     }
