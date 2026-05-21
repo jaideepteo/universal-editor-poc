@@ -360,8 +360,13 @@
         "component": "select",
         "name": "classes_styles",
         "label": "Style",
+        "value": "",
         "valueType": "string",
         "options": [
+          {
+            "name": "Select Style",
+            "value": ""
+          },
           {
             "name": "Faded Border",
             "value": "style-faded-Border"
@@ -380,8 +385,13 @@
         "component": "select",
         "name": "classes_size",
         "label": "Size",
+        "value": "",
         "valueType": "string",
         "options": [
+          {
+            "name": "Select Size",
+            "value": ""
+          },
           {
             "name": "XL",
             "value": "size-xl"
@@ -416,8 +426,13 @@
         "component": "select",
         "name": "classes_fontWeight",
         "label": "Font Weight",
+        "value": "",
         "valueType": "string",
         "options": [
+          {
+            "name": "Select Font Weight",
+            "value": ""
+          },
           {
             "name": "S",
             "value": "font-s"
@@ -452,8 +467,13 @@
         "component": "select",
         "name": "classes_alignment",
         "label": "Alignment",
+        "value": "",
         "valueType": "string",
         "options": [
+          {
+            "name": "Select Alignment",
+            "value": ""
+          },
           {
             "name": "Left",
             "value": "alignment-left"
@@ -472,8 +492,13 @@
         "component": "select",
         "name": "classes_marginTop",
         "label": "Margin Top",
+        "value": "",
         "valueType": "string",
         "options": [
+          {
+            "name": "Select Margin Top",
+            "value": ""
+          },
           {
             "name": "XXS",
             "value": "mt-xxs"
@@ -508,8 +533,13 @@
         "component": "select",
         "name": "classes_marginBottom",
         "label": "Margin Bottom",
+        "value": "",
         "valueType": "string",
         "options": [
+          {
+            "name": "Select Margin Bottom",
+            "value": ""
+          },
           {
             "name": "XXS",
             "value": "mb-xxs"
