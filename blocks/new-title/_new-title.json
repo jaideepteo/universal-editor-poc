@@ -99,8 +99,13 @@
           "component": "select",
           "name": "classes_color",
           "label": "Color",
+          "value": "",
           "valueType": "string",
           "options": [
+            {
+              "name": "Select Color",
+              "value": ""
+            },
             {
               "name": "Morning White",
               "value": "color-morning-white"
