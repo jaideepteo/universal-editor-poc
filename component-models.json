@@ -337,59 +337,107 @@
         "options": [
           {
             "name": "Morning White",
-            "value": "morning-white"
+            "value": "color-morning-white"
           },
           {
             "name": "Sunrise Cream",
-            "value": "sunrise-cream"
+            "value": "color-sunrise-cream"
           },
           {
             "name": "Sunrise Gold",
-            "value": "sunrise-gold"
-          },
-          {
-            "name": "Font Faded Border",
-            "value": "font-faded-Border"
-          },
-          {
-            "name": "Font Sunrise Cream",
-            "value": "font-sunrise-Cream"
-          },
-          {
-            "name": "Font Sunrise Gold",
-            "value": "font-sunrise-Gold"
-          },
-          {
-            "name": "Alignment Left",
-            "value": "alignment-left"
-          },
-          {
-            "name": "Alignment Right",
-            "value": "alignment-right"
-          },
-          {
-            "name": "Alignment Center",
-            "value": "alignment-center"
+            "value": "color-sunrise-gold"
           }
         ]
       },
       {
         "component": "select",
-        "name": "classes_font",
-        "label": "Font",
+        "name": "classes_styles",
+        "label": "Style",
         "valueType": "string",
         "options": [
           {
             "name": "Faded Border",
-            "value": "faded-Border"
+            "value": "style-faded-Border"
           },
           {
             "name": "Sunrise Cream",
-            "value": "sunrise-Cream"
+            "value": "style-sunrise-Cream"
           },
           {
             "name": "Sunrise Gold",
-            "value": "sunrise-Gold"
+            "value": "style-sunrise-Gold"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_size",
+        "label": "Size",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "XL",
+            "value": "size-xl"
+          },
+          {
+            "name": "L",
+            "value": "size-l"
+          },
+          {
+            "name": "S",
+            "value": "size-s"
+          },
+          {
+            "name": "M",
+            "value": "size-m"
+          },
+          {
+            "name": "XS",
+            "value": "size-xs"
+          },
+          {
+            "name": "XXS",
+            "value": "size-xxs"
+          },
+          {
+            "name": "Stat Block",
+            "value": "size-statblock"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_fontWeight",
+        "label": "Font Weight",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "S",
+            "value": "font-s"
+          },
+          {
+            "name": "XS",
+            "value": "font-xs"
+          },
+          {
+            "name": "XXS",
+            "value": "font-xxs"
+          },
+          {
+            "name": "Stat Block",
+            "value": "font-statblock"
+          },
+          {
+            "name": "Regular",
+            "value": "font-regular"
+          },
+          {
+            "name": "Semi Bold",
+            "value": "font-semibold"
+          },
+          {
+            "name": "Bold",
+            "value": "font-bold"
           }
         ]
       },
@@ -401,35 +449,87 @@
         "options": [
           {
             "name": "Left",
-            "value": "left"
+            "value": "alignment-left"
           },
           {
             "name": "Right",
-            "value": "right"
+            "value": "alignment-right"
           },
           {
             "name": "Center",
-            "value": "center"
+            "value": "alignment-center"
           }
         ]
       },
       {
         "component": "select",
-        "name": "Style",
-        "label": "Style",
+        "name": "classes_marginTop",
+        "label": "Margin Top",
         "valueType": "string",
         "options": [
           {
-            "name": "Faded Border",
-            "value": "faded-Border"
+            "name": "XXS",
+            "value": "mt-xxs"
           },
           {
-            "name": "Sunrise Cream",
-            "value": "sunrise-Cream"
+            "name": "XS",
+            "value": "mt-xs"
           },
           {
-            "name": "Sunrise Gold",
-            "value": "sunrise-Gold"
+            "name": "S",
+            "value": "mt-s"
+          },
+          {
+            "name": "M",
+            "value": "mt-m"
+          },
+          {
+            "name": "L",
+            "value": "mt-l"
+          },
+          {
+            "name": "XL",
+            "value": "mt-xl"
+          },
+          {
+            "name": "XXL",
+            "value": "mt-xxl"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_marginBottom",
+        "label": "Margin Bottom",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "XXS",
+            "value": "mb-xxs"
+          },
+          {
+            "name": "XS",
+            "value": "mb-xs"
+          },
+          {
+            "name": "S",
+            "value": "mb-s"
+          },
+          {
+            "name": "M",
+            "value": "mb-m"
+          },
+          {
+            "name": "L",
+            "value": "mb-l"
+          },
+          {
+            "name": "XL",
+            "value": "mb-xl"
+          },
+          {
+            "name": "XXL",
+            "value": "mb-xxl"
           }
         ]
       }
