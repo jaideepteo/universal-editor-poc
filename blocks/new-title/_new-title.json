@@ -94,22 +94,22 @@
           "name": "stylesTab"
         },
         {
-          "component": "multiselect",
-          "name": "classes",
-          "label": "Block Styles",
+          "component": "select",
+          "name": "classes_color",
+          "label": "Color",
           "valueType": "string",
           "options": [
             {
-              "name": "Color Morning White",
-              "value": "color-morning-white"
+              "name": "Morning White",
+              "value": "morning-white"
             },
             {
-              "name": "Color Sunrise Cream",
-              "value": "color-sunrise-cream"
+              "name": "Sunrise Cream",
+              "value": "sunrise-cream"
             },
             {
-              "name": "Color Sunrise Gold",
-              "value": "color-sunrise-gold"
+              "name": "Sunrise Gold",
+              "value": "sunrise-gold"
             },
             {
               "name": "Font Faded Border",
@@ -139,6 +139,46 @@
         },
         {
           "component": "select",
+          "name": "classes_font",
+          "label": "Font",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Faded Border",
+              "value": "faded-Border"
+            },
+            {
+              "name": "Sunrise Cream",
+              "value": "sunrise-Cream"
+            },
+            {
+              "name": "Sunrise Gold",
+              "value": "sunrise-Gold"
+            }
+          ]
+        },
+         {
+          "component": "select",
+          "name": "classes_alignment",
+          "label": "Alignment",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Left",
+              "value": "left"
+            },
+            {
+              "name": "Right",
+              "value": "right"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            }
+          ]
+        },
+        {
+          "component": "select",
           "name": "Style",
           "label": "Style",
           "valueType": "string",
@@ -156,17 +196,6 @@
               "value": "sunrise-Gold"
             }
           ]
-        },
-        {
-          "component": "text",
-          "name": "cssClass",
-          "label": "CSS Class",
-          "description": "Extra class(es) to add to the section (comma-separated)"
-        },
-        {
-          "component": "text",
-          "name": "id",
-          "label": "Section ID"
         }
       ]
     }
