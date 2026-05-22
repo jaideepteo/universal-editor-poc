@@ -1,0 +1,31 @@
+ /* -------- utilities -------- */
+  
+/* Text alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+
+/* Font weight utilities */
+.fw-regular { font-weight: var(--fw-regular); }
+.fw-semibold { font-weight: var(--fw-semibold); }
+.fw-bold { font-weight: var(--fw-bold); }
+
+
+/* Font family utilities */
+.font-heading { font-family: var(--font-heading); }
+.font-body { font-family: var(--font-body); }
+.font-label { font-family: var(--font-label); }
+
+/* Color utilities (optional but handy) */
+.text-midnight-black { color: var(--color-midnight-black); }
+.text-first-light-01 { color: var(--color-first-light-01); }
+.text-first-light-02 { color: var(--color-first-light-02); }
+.text-first-light-03 { color: var(--color-first-light-03); }
+.text-sunset-orange { color: var(--color-sunset-orange); }
+.text-genpact-coral { color: var(--color-genpact-coral); }
+
+.bg-midnight-black { background-color: var(--color-midnight-black); }
+.bg-sunrise-cream { background-color: var(--color-sunrise-cream); }
+.bg-sunrise-white { background-color: var(--color-sunrise-white); }
+.bg-morning-white { background-color: var(--color-morning-white); }
