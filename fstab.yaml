@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p136604-e1369604.adobeaemcloud.com/bin/franklin.delivery/jaideepteo/universal-editor-poc/develop"
+    url: "https://author-p136604-e1369604.adobeaemcloud.com/bin/franklin.delivery/jaideepteo/universal-editor-poc/main"
     type: "markup"
     suffix: ".html"
