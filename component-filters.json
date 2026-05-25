@@ -62,8 +62,7 @@
         ],
         "list": [
           "bullet_list",
-          "ordered_list",
-          "numbered_list"
+          "ordered_list"
         ],
         "indentation": [
           "indent",
@@ -82,8 +81,8 @@
           "unlink"
         ],
         "sections": [
-          "format",
           "blocks",
+          "format",
           "alignment",
           "indentation",
           "list",

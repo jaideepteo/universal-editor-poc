@@ -248,11 +248,11 @@
         "toolbar": {
           "format": ["bold","italic","underline"],
           "alignment": ["left", "center", "right", "justify"],
-          "list": ["bullet_list","ordered_list","numbered_list"],
+          "list": ["bullet_list","ordered_list"],
           "indentation": ["indent", "outdent"],
           "blocks": ["paragraph", "h2", "h3", "h4", "h5", "code_block"],
           "insert": ["link", "unlink"],
-          "sections": ["format","blocks","alignment","indentation","list","insert"]
+          "sections": ["blocks","format","alignment","indentation","list","insert"]
         },
         "actions": {
           "link": {
