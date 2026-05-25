@@ -73,17 +73,23 @@
           "h5",
           "code_block"
         ],
+        "insert": [
+          "link",
+          "unlink"
+        ],
         "sections": [
           "blocks",
           "format",
           "alignment",
           "indentation",
-          "list"
+          "list",
+          "insert"
         ]
       },
       "actions": {
         "link": {
           "label": "Insert Link",
+          "shortcut": "Mod-K",
           "hideTarget": false
         }
       }
