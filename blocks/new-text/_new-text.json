@@ -256,8 +256,10 @@
         "actions": {
           "link": {
             "label": "Insert Link",
-            "shortcut": "Mod-K",
             "hideTarget": false
+          },
+          "unlink": {
+            "label": "Remove Link"
           }
         }
       }
