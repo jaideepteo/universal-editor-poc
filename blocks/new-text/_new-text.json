@@ -250,8 +250,7 @@
           "list": ["bullet_list","ordered_list"],
           "indentation": ["indent", "outdent"],
           "blocks": ["paragraph", "h2", "h3", "h4", "h5", "code_block"],
-          "insert": ["link", "unlink"],
-          "sections": ["blocks","format","alignment","indentation","list","insert"]
+          "sections": ["blocks","format","alignment","indentation","list"]
         },
         "actions": {
           "link": {

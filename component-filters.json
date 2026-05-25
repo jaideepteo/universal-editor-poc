@@ -73,17 +73,12 @@
           "h5",
           "code_block"
         ],
-        "insert": [
-          "link",
-          "unlink"
-        ],
         "sections": [
           "blocks",
           "format",
           "alignment",
           "indentation",
-          "list",
-          "insert"
+          "list"
         ]
       },
       "actions": {
