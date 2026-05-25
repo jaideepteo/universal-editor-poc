@@ -24,4 +24,5 @@ export default function decorate(block) {
   if (titleHeading) wrapper.append(titleHeading);
   if (buttonContainer) wrapper.append(buttonContainer);
   block.replaceChildren(wrapper);
+  
 }

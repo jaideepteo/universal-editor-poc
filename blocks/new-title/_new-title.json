@@ -108,15 +108,15 @@
             },
             {
               "name": "Morning White",
-              "value": "color-morning-white"
+              "value": "text-sunrise-white"
             },
             {
               "name": "Sunrise Cream",
-              "value": "color-sunrise-cream"
+              "value": "text-sunrise-cream"
             },
             {
               "name": "Sunrise Gold",
-              "value": "color-sunrise-gold"
+              "value": "text-sunrise-gold"
             }
           ]
         },
