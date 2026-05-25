@@ -182,7 +182,7 @@
                 "template": {
                   "name": "New Text",
                   "model": "new-text",
-                  "filter": "new-text-rte"
+                  "filter": "new-text"
                 }
               }
             }

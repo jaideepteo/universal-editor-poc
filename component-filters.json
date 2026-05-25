@@ -43,7 +43,7 @@
     ]
   },
   {
-    "id": "new-text-rte",
+    "id": "new-text",
     "components": [
       "new-text"
     ],

@@ -11,7 +11,7 @@
             "template": {
               "name": "New Text",
               "model": "new-text",
-              "filter": "new-text-rte"
+              "filter": "new-text"
             }
           }
         }
@@ -242,7 +242,7 @@
   ],
   "filters": [
     {
-      "id": "new-text-rte",
+      "id": "new-text",
       "components": ["new-text"],
       "rte": {
         "toolbar": {
