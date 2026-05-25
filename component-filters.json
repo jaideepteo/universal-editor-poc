@@ -75,13 +75,19 @@
           "h3",
           "h4",
           "h5",
-          "code_block",
-          "quote",
-          "pre_formatted"
+          "code_block"
         ],
         "insert": [
           "link",
           "unlink"
+        ],
+        "sections": [
+          "format",
+          "blocks",
+          "alignment",
+          "indentation",
+          "list",
+          "insert"
         ]
       },
       "actions": {
