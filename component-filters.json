@@ -60,12 +60,26 @@
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "table",
+          "special_characters"
+        ],
+        "sections": [
+          "insert",
+          "blocks"
         ]
       },
       "actions": {
         "link": {
+          "shortcut": "Mod-K",
+          "label": "Insert Link",
           "hideTarget": false
+        },
+        "image": {
+          "wrapInPicture": false,
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image"
         }
       }
     }
