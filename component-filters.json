@@ -44,9 +44,6 @@
   },
   {
     "id": "new-text",
-    "components": [
-      "new-text"
-    ],
     "rte": {
       "toolbar": {
         "format": [
