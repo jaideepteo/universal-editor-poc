@@ -63,7 +63,8 @@
         "columns",
         "fragment",
         "logo",
-        "new-title"
+        "new-title",
+        "new-text"
       ]
     }
   ]
