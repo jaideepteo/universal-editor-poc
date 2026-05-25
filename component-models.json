@@ -267,7 +267,25 @@
         "component": "richtext",
         "name": "description",
         "value": "",
-        "label": "Description"
+        "label": "Description",
+        "rte": {
+          "toolbar": {
+            "blocks": [
+              "paragraph",
+              "h2",
+              "h3",
+              "h4",
+              "h5",
+              "quote",
+              "pre_formatted"
+            ]
+          },
+          "actions": {
+            "link": {
+              "hideTarget": false
+            }
+          }
+        }
       },
       {
         "component": "tab",
