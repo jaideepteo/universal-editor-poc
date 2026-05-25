@@ -91,6 +91,12 @@
           ]
         },
         {
+          "component": "richtext",
+          "name": "description",
+          "value": "",
+          "label": "Description"
+        },
+        {
           "component": "tab",
           "label": "Styles",
           "name": "stylesTab"
