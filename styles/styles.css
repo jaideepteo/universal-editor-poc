@@ -28,36 +28,49 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--funnel-font-family);
+  font-style: normal;
+  color: #fff;
+  scroll-margin: 40px;
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: var(--funnel-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
-  color: #fff;
 }
 
-h1 { font-size: var(--heading-xl-font-size); }
-
-h2 { 
-    font-size: var(--heading-l-font-size);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    margin: 20px 0 40px; 
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading-xl-font-size);
+  line-height: var(--heading-xl-line-height);
 }
 
-h3 { font-size: var(--heading-m-font-size); }
-h4 { font-size: var(--heading-s-font-size); }
-h5 { font-size: var(--heading-xs-font-size); }
-h6 { font-size: var(--heading-xxs-font-size); }
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading-l-font-size);
+  line-height: var(--heading-l-line-height);
+  margin: 20px 0 40px; 
+}
 
-@media (width >= 769px) {
-  h2
-  {
-    font-size: 64px;
-    line-height: 71px;
-  }
+h3 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading-m-font-size);
+  line-height: var(--heading-m-line-height);
+}
+
+h4 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--heading-s-font-size);
+  line-height: var(--heading-s-line-height);
+}
+
+h5 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--heading-xs-font-size);
+  line-height: var(--heading-xs-line-height);
+}
+
+h6 {
+  font-weight: var(--fw-regular); 
+  font-size: var(--heading-xxs-font-size);
+  line-height: var(--heading-xxs-line-height);
 }
 
 p,
