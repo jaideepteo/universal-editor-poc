@@ -41,5 +41,33 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "new-text-rte",
+    "components": [
+      "new-text"
+    ],
+    "rte": {
+      "toolbar": {
+        "blocks": [
+          "paragraph",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "quote",
+          "pre_formatted"
+        ],
+        "insert": [
+          "link",
+          "unlink"
+        ]
+      },
+      "actions": {
+        "link": {
+          "hideTarget": false
+        }
+      }
+    }
   }
 ]

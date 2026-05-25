@@ -10,7 +10,8 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "New Text",
-              "model": "new-text"
+              "model": "new-text",
+              "filter": "new-text-rte"
             }
           }
         }
@@ -31,17 +32,7 @@
           "component": "richtext",
           "name": "description",
           "value": "",
-          "label": "Description",
-          "rte": {
-            "toolbar": {
-              "blocks": ["paragraph", "h2", "h3", "h4", "h5", "quote", "pre_formatted"]
-            },
-            "actions": {
-            "link": {
-                  "hideTarget": false
-                }
-            }
-          }
+          "label": "Description"
         },
         {
           "component": "tab",
@@ -249,5 +240,21 @@
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "new-text-rte",
+      "components": ["new-text"],
+      "rte": {
+        "toolbar": {
+          "blocks": ["paragraph", "h2", "h3", "h4", "h5", "quote", "pre_formatted"],
+          "insert": ["link", "unlink"]
+        },
+        "actions": {
+          "link": {
+            "hideTarget": false
+          }
+        }
+      }
+    }
+  ]
 }
