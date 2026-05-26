@@ -166,7 +166,7 @@ body {
   display: none;
   margin: 0;
   background-color: var(--color-primary-midnight, #000);
-  color: var(--color-sunrise-white);
+  color: var(--color-sunrise-white, #fff);
   font-family: var(--funnel-font-family);
   font-size: var(--body-xs-font-size);
   line-height: var(--body-xs-line-height);

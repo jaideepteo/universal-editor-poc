@@ -1,5 +1,5 @@
 footer {
-  font-size: var(--body-font-size-xs);
+  font-size: var(--body-xs-font-size);
 }
 
 footer .footer > div {
