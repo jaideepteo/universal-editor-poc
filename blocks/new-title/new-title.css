@@ -1,0 +1,26 @@
+.new-title
+{
+    h1{
+        color: var(--block-text-color, #fff);
+        text-align: var(--block-text-align, left);
+        font-weight: var(--heading-font-weight, 700);
+        font-size: var(--heading-font-size, 84px);
+        line-height: var(--heading-line-height, 84px);
+    }
+
+    &--style-faded-border:after {
+        background: linear-gradient(var(--fade-direction, 90deg), transparent, var(--transition-point-start, 25%), #fff2df, var(--transition-point-end, 75%), transparent);
+        content: "";
+        display: block;
+        height: 2px;
+        margin-top: 20px;
+        max-width: 300px;
+        opacity: .15;
+
+        @media (width >= 768px) {
+            margin-top: 24px;
+            max-width: 464px;
+        }
+        
+    }
+}

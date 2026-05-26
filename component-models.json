@@ -339,86 +339,78 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Color",
+            "name": "None",
             "value": ""
           },
           {
             "name": "Morning White",
-            "value": "color-morning-white"
+            "value": "text-morning-white"
           },
           {
             "name": "Sunrise Cream",
-            "value": "color-sunrise-cream"
+            "value": "text-sunrise-cream"
           },
           {
             "name": "Sunrise Gold",
-            "value": "color-sunrise-gold"
+            "value": "text-sunrise-gold"
           }
         ]
       },
       {
         "component": "select",
         "name": "classes_styles",
-        "label": "Style",
+        "label": "Styles",
         "value": "",
         "valueType": "string",
         "options": [
           {
-            "name": "Select Style",
+            "name": "None",
             "value": ""
           },
           {
             "name": "Faded Border",
-            "value": "style-faded-Border"
-          },
-          {
-            "name": "Sunrise Cream",
-            "value": "style-sunrise-Cream"
-          },
-          {
-            "name": "Sunrise Gold",
-            "value": "style-sunrise-Gold"
+            "value": "style-faded-border"
           }
         ]
       },
       {
         "component": "select",
         "name": "classes_size",
-        "label": "Size",
+        "label": "Font Size",
         "value": "",
         "valueType": "string",
         "options": [
           {
-            "name": "Select Size",
+            "name": "None",
             "value": ""
           },
           {
             "name": "XL",
-            "value": "size-xl"
+            "value": "text-heading-xl"
           },
           {
             "name": "L",
-            "value": "size-l"
-          },
-          {
-            "name": "S",
-            "value": "size-s"
+            "value": "text-heading-l"
           },
           {
             "name": "M",
-            "value": "size-m"
+            "value": "text-heading-m"
+          },
+          {
+            "name": "S",
+            "value": "text-heading-s"
           },
           {
             "name": "XS",
-            "value": "size-xs"
+            "value": "text-heading-xs"
           },
           {
             "name": "XXS",
-            "value": "size-xxs"
+            "value": "text-heading-xxs"
           },
           {
             "name": "Stat Block",
-            "value": "size-statblock"
+            "value": "text-heading-stat"
           }
         ]
       },
