@@ -186,36 +186,20 @@
           "valueType": "string",
           "options": [
             {
-              "name": "Select Font Weight",
+              "name": "None",
               "value": ""
             },
             {
-              "name": "S",
-              "value": "font-s"
-            },
-            {
-              "name": "XS",
-              "value": "font-xs"
-            },
-            {
-              "name": "XXS",
-              "value": "font-xxs"
-            },
-            {
-              "name": "Stat Block",
-              "value": "font-statblock"
-            },
-            {
               "name": "Regular",
-              "value": "font-regular"
+              "value": "fw-regular"
             },
             {
               "name": "Semi Bold",
-              "value": "font-semibold"
+              "value": "fw-semibold"
             },
             {
               "name": "Bold",
-              "value": "font-bold"
+              "value": "fw-bold"
             }
           ]
         },
@@ -227,20 +211,20 @@
           "valueType": "string",
           "options": [
             {
-              "name": "Select Alignment",
+              "name": "None",
               "value": ""
             },
             {
               "name": "Left",
-              "value": "alignment-left"
+              "value": "text-left"
             },
             {
               "name": "Right",
-              "value": "alignment-right"
+              "value": "text-center"
             },
             {
               "name": "Center",
-              "value": "alignment-center"
+              "value": "text-right"
             }
           ]
         },
