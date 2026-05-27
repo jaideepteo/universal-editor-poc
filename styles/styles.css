@@ -1,83 +1,175 @@
-/*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
- */
 
+/* -------- AEM EDS FOUNDATION TOKENS - EDS Compatible (Pure CSS - No SCSS) -------- */
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+/* -------- Font family -------- */
+  --funnel-font-family: 'Funnel Sans', sans-serif;
 
-  /* fonts */
-  --body-font-family: 'Funnel Sans', sans-serif;
-  --heading-font-family: 'Funnel Sans', sans-serif;
+/* -------- Colors -------- */
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --color-primary-midnight: #161916;
+  --color-primary-morning-white: #fff;
+  --color-primary-coral: #ff555f;
+  --color-primary-sunrise-gold: #ffad28;
+  --color-secondary-first-light-01: #444744;
+  --color-secondary-first-light-02: #6d706b;
+  --color-secondary-first-light-03: #adb1ac;
+  --color-secondary-sunrise-white: #fffaf4;
+  --color-secondary-sunrise-cream: #fff2df;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+/* -------- Font weights -------- */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 
-  /* nav height */
-  --nav-height: 64px;
+/* -------- Breakpoint Tokens (Documentation + JS usage) -------- */
+  --bp-phone: 320px;
+  --bp-phone-lg: 375px;
+  --bp-phone-xl: 472px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-navigation: 1085px;
+  --bp-desktop-lg: 1200px;
+  --bp-desktop-lg-2: 1300px;
+  --bp-stat-block-wrap: 1325px;
+  --bp-desktop-lg-3: 1400px;
+
+  /* --- Fluid Spacing Scale (Mobile First Defaults) --- */
+  --space-xxs: 8px;
+  --space-xs: 20px;
+  --space-s: 20px;
+  --space-m: 30px;
+  --space-l: 32px;
+  --space-xl: 40px;
+  --space-xxl: 96px;
+  --space-section: 96px;
+
+  /* --- Heading font (Mobile First Defaults) --- */
+  --heading-xl-font-size: 48px;
+  --heading-xl-line-height: 52px;
+  --heading-l-font-size: 48px;
+  --heading-l-line-height: 56px;
+  --heading-m-font-size: 32px;
+  --heading-m-line-height: 40px;
+  --heading-s-font-size: 28px;
+  --heading-s-line-height: 32px;
+  --heading-xs-font-size: 24px;
+  --heading-xs-line-height: 28px;
+  --heading-xxs-font-size: 14px;
+  --heading-xxs-line-height: 16px;
+  --heading-stat-font-size: 64px;
+  --heading-stat-line-height: 76px;
+
+  /* --- Body font (Mobile First Defaults) --- */
+  --body-xxl-font-size: 32px;
+  --body-xxl-line-height: 40px;
+  --body-xl-font-size: 24px;
+  --body-xl-letter-spacing: 0.72px;
+  --body-xl-line-height: 32px;
+  --body-xl-font-weight: 300;
+  --body-l-font-size: 20px;
+  --body-l-letter-spacing: 0.72px;
+  --body-l-line-height: 30px;
+  --body-m-font-size: 20px;
+  --body-m-letter-spacing: 0.6px;
+  --body-m-line-height: 28px;
+  --body-s-font-size: 18px;
+  --body-s-letter-spacing: 0.54px;
+  --body-s-line-height: 24px;
+  --body-xs-font-size: 14px;
+  --body-xs-letter-spacing: 0.42px;
+  --body-xs-line-height: 20px;
+  --body-xxs-font-size: 14px;
+  --body-xxs-letter-spacing: 0.42px;
+  --body-xxs-line-height: 18px;
+
+  /* --- Label font (Mobile First Defaults) --- */
+  --label-m-font-size: 20px;
+  --label-m-letter-spacing: 0.6px;
+  --label-m-line-height: 24px;
+  --label-s-font-size: 16px;
+  --label-s-letter-spacing: 0.48px;
+  --label-s-line-height: 20px;
+  --label-xs-font-size: 14px;
+  --label-xs-letter-spacing: 0.42px;
+  --label-xs-line-height: 16px;
+  --label-xxs-font-size: 12px;
+  --label-xxs-letter-spacing: 0.36px;
+  --label-xxs-line-height: 16px;
 }
 
-/* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
-}
-
-@media (width >= 900px) {
+/* >tablet */
+@media (width >= 768px) { 
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    /* --- Heading font (Tablet) --- */
+    --heading-xl-font-size: 84px;
+    --heading-xl-line-height: 84px;
+    --heading-l-font-size: 64px;
+    --heading-l-line-height: 71px;
+    --heading-m-font-size: 40px;
+    --heading-m-line-height: 48px;
+    --heading-s-font-size: 32px;
+    --heading-s-line-height: 40px;
 
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    /* --- Body font (Tablet) --- */
+    --body-xxl-font-size: 36px;
+    --body-xxl-line-height: 44px;
+    --body-xl-font-size: 32px;
+    --body-xl-letter-spacing: 0.96px;
+    --body-xl-line-height: 40px;
+    --body-l-font-size: 24px;
+    --body-l-line-height: 32px;
+    --body-xs-font-size: 16px;
+    --body-xs-letter-spacing: 0.48px;
+    --body-xs-line-height: 24px;
+
+    /* --- Label font (Tablet) --- */
+    --label-xs-line-height: 20px;
+
+    /* --- Fluid Spacing Scale (Tablet) --- */
+    --space-xxs: 10px;
+    --space-s: 24px;
+    --space-m: 40px;
+    --space-l: 48px;
+    --space-xl: 60px;
   }
 }
+
+/* >Small desktop */
+@media (width >= 1025px) { 
+  :root {
+    --space-section: 120px;
+  }
+}
+
+/* >desktop */
+@media (width >= 1200px) { 
+  :root {
+    /* --- Heading font (Desktop) --- */
+    --heading-m-font-size: 48px;
+    --heading-m-line-height: 56px;
+    --heading-s-font-size: 36px;
+    --heading-s-line-height: 44px;
+    --heading-xxs-font-size: 20px;
+    --heading-xxs-line-height: 28px;
+    --heading-stat-font-size: 96px;
+    --heading-stat-line-height: 106px;
+
+    /* --- Body font (Desktop) --- */
+    --body-xl-font-weight: 400;
+  }
+}
+ 
 
 body {
   display: none;
   margin: 0;
-  background-color: #161916;
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  background-color: var(--color-primary-midnight, #000);
+  color: var(--color-sunrise-white, #fff);
+  font-family: var(--funnel-font-family);
+  font-size: var(--body-xs-font-size);
+  line-height: var(--body-xs-line-height);
 }
 
 body.appear {
@@ -100,36 +192,49 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
+  font-family: var(--funnel-font-family);
+  font-style: normal;
   color: #fff;
+  scroll-margin: 40px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-
-h2 { 
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    margin: 20px 0 40px; 
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading-xl-font-size);
+  line-height: var(--heading-xl-line-height);
 }
 
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading-l-font-size);
+  line-height: var(--heading-l-line-height);
+  margin: 20px 0 40px; 
+}
 
-@media (width >= 769px) {
-  h2
-  {
-    font-size: 64px;
-    line-height: 71px;
-  }
+h3 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading-m-font-size);
+  line-height: var(--heading-m-line-height);
+}
+
+h4 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--heading-s-font-size);
+  line-height: var(--heading-s-line-height);
+}
+
+h5 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--heading-xs-font-size);
+  line-height: var(--heading-xs-line-height);
+}
+
+h6 {
+  font-weight: var(--fw-regular); 
+  font-size: var(--heading-xxs-font-size);
+  line-height: var(--heading-xxs-line-height);
 }
 
 p,
@@ -144,13 +249,14 @@ blockquote {
 
 code,
 pre {
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-xs-font-size);
+  line-height: var(--body-xs-line-height);
 }
 
 pre {
   padding: 16px;
   border-radius: 8px;
-  background-color: var(--light-color);
+  background-color: var(--color-sunrise-cream);
   overflow-x: auto;
   white-space: pre;
 }
@@ -168,13 +274,13 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--color-sunrise-white);
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--color-sunrise-white);
   text-decoration: underline;
 }
 
@@ -187,7 +293,7 @@ button {
   margin: 12px 0;
   border-radius: 2.4em;
   padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
+  font-family: var(--funnel-font-family);
   font-style: normal;
   font-weight: 500;
   line-height: 1.25;
@@ -213,7 +319,7 @@ button:focus {
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
+  background-color: var(--color-first-light-03);
   cursor: unset;
 }
 
@@ -265,7 +371,7 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: var(--color-first-light-01);
   margin: 0;
   padding: 40px 0;
 }
@@ -307,3 +413,235 @@ main .section.highlight {
 {
   margin-top: 30px;
 }
+
+ /* -------- utilities -------- */
+  
+/* Text alignments */
+.text-left   { --block-text-align: left; }
+.text-center { --block-text-align: center; }
+.text-right  { --block-text-align: right; }
+
+
+/* Font weights  */
+.fw-light    { --block-fw: var(--fw-light); }
+.fw-regular  { --block-fw: var(--fw-regular); }
+.fw-medium   { --block-fw: var(--fw-medium); }
+.fw-semibold { --block-fw: var(--fw-semibold); }
+.fw-bold     { --block-fw: var(--fw-bold); }
+
+/* Text colors */
+.text-midnight {
+  --block-text-color: var(--color-primary-midnight);
+}
+
+.text-morning-white {
+  --block-text-color: var(--color-primary-morning-white);
+}
+
+.text-coral {
+  --block-text-color: var(--color-primary-coral);
+}
+
+.text-sunrise-gold {
+  --block-text-color: var(--color-primary-sunrise-gold);
+}
+
+.text-first-light-01 {
+  --block-text-color: var(--color-secondary-first-light-01);
+}
+
+.text-first-light-02 {
+  --block-text-color: var(--color-secondary-first-light-02);
+}
+
+.text-first-light-03 {
+  --block-text-color: var(--color-secondary-first-light-03);
+}
+
+.text-sunrise-white {
+  --block-text-color: var(--color-secondary-sunrise-white);
+}
+
+.text-sunrise-cream {
+  --block-text-color: var(--color-secondary-sunrise-cream);
+}
+
+
+/* Background colors */
+
+.bg-midnight {
+  --block-bg-color: var(--color-primary-midnight);
+}
+
+.bg-morning-white {
+  --block-bg-color: var(--color-primary-morning-white);
+}
+
+.bg-coral {
+  --block-bg-color: var(--color-primary-coral);
+}
+
+.bg-sunrise-gold {
+  --block-bg-color: var(--color-primary-sunrise-gold);
+}
+
+.bg-first-light-01 {
+  --block-bg-color: var(--color-secondary-first-light-01);
+}
+
+.bg-first-light-02 {
+  --block-bg-color: var(--color-secondary-first-light-02);
+}
+
+.bg-first-light-03 {
+  --block-bg-color: var(--color-secondary-first-light-03);
+}
+
+.bg-sunrise-white {
+  --block-bg-color: var(--color-secondary-sunrise-white);
+}
+
+.bg-sunrise-cream {
+  --block-bg-color: var(--color-secondary-sunrise-cream);
+}
+
+/* --- Heading Text Utilities --- */
+.text-heading-xl {
+  --heading-font-weight: var(--fw-bold);
+  --heading-font-size: var(--heading-xl-font-size);
+  --heading-line-height: var(--heading-xl-line-height);
+}
+
+.text-heading-l {
+  --heading-font-weight: var(--fw-bold);
+  --heading-font-size: var(--heading-l-font-size);
+  --heading-line-height: var(--heading-l-line-height);
+}
+
+.text-heading-m {
+  --heading-font-weight: var(--fw-bold);
+  --heading-font-size: var(--heading-m-font-size);
+  --heading-line-height: var(--heading-m-line-height);
+}
+
+.text-heading-s {
+  --heading-font-weight: var(--fw-semibold);
+  --heading-font-size: var(--heading-s-font-size);
+  --heading-line-height: var(--heading-s-line-height);
+}
+
+.text-heading-xs {
+  --heading-font-weight: var(--fw-semibold);
+  --heading-font-size: var(--heading-xs-font-size);
+  --heading-line-height: var(--heading-xs-line-height);
+}
+
+.text-heading-xxs {
+  --heading-font-weight: var(--fw-regular); 
+  --heading-font-size: var(--heading-xxs-font-size);
+  --heading-line-height: var(--heading-xxs-line-height);
+}
+
+.text-heading-stat {
+  --heading-font-weight: var(--fw-bold);
+  --heading-font-size: var(--heading-stat-font-size);
+  --heading-line-height: var(--heading-stat-line-height);
+}
+
+/* --- Body Text Utilities --- */
+.text-body-xxl {
+  --body-font-weight: var(--fw-regular);
+  --body-font-size: var(--body-xxl-font-size);
+  --body-line-height: var(--body-xxl-line-height);
+}
+
+.text-body-xl {
+  --body-font-weight: var(--body-xl-font-weight);
+  --body-font-size: var(--body-xl-font-size);
+  --body-letter-spacing: var(--body-xl-letter-spacing);
+  --body-line-height: var(--body-xl-line-height);
+}
+
+.text-body-l {
+  --body-font-weight: var(--fw-light);
+  --body-font-size: var(--body-l-font-size);
+  --body-letter-spacing: var(--body-l-letter-spacing);
+  --body-line-height: var(--body-l-line-height);
+}
+
+.text-body-m {
+  --body-font-weight: var(--fw-regular);
+  --body-font-size: var(--body-m-font-size);
+  --body-letter-spacing: var(--body-m-letter-spacing);
+  --body-line-height: var(--body-m-line-height);
+}
+
+.text-body-s {
+  --body-font-weight: var(--fw-bold);
+  --body-font-size: var(--body-s-font-size);
+  --body-letter-spacing: var(--body-s-letter-spacing);
+  --body-line-height: var(--body-s-line-height);
+}
+
+.text-body-xs {
+  --body-font-weight: var(--fw-regular);
+  --body-font-size: var(--body-xs-font-size);
+  --body-letter-spacing: var(--body-xs-letter-spacing);
+  --body-line-height: var(--body-xs-line-height);
+}
+
+.text-body-xxs {
+  --body-font-weight: var(--fw-regular);
+  --body-font-size: var(--body-xxs-font-size);
+  --body-letter-spacing: var(--body-xxs-letter-spacing);
+  --body-line-height: var(--body-xxs-line-height);
+}
+
+/* --- Label Text Utilities --- */
+.text-label-m {
+  --label-font-weight: var(--fw-medium);
+  --label-font-size: var(--label-m-font-size);
+  --label-letter-spacing: var(--label-m-letter-spacing);
+  --label-line-height: var(--label-m-line-height);
+}
+
+.text-label-s {
+  --label-font-weight: var(--fw-bold);
+  --label-font-size: var(--label-s-font-size);
+  --label-letter-spacing: var(--label-s-letter-spacing);
+  --label-line-height: var(--label-s-line-height);
+}
+
+.text-label-xs {
+  --label-font-weight: var(--fw-medium);
+  --label-font-size: var(--label-xs-font-size);
+  --label-letter-spacing: var(--label-xs-letter-spacing);
+  --label-line-height: var(--label-xs-line-height);
+}
+
+.text-label-xxs {
+  --label-font-weight: var(--fw-medium);
+  --label-font-size: var(--label-xxs-font-size);
+  --label-letter-spacing: var(--label-xxs-letter-spacing);
+  --label-line-height: var(--label-xxs-line-height);
+}
+
+/* --- Top Padding Utilities --- */
+.mt-xxs     { padding-top: var(--space-xxs); }
+.mt-xs      { padding-top: var(--space-xs); }
+.mt-s       { padding-top: var(--space-s); }
+.mt-m       { padding-top: var(--space-m); }
+.mt-l       { padding-top: var(--space-l); }
+.mt-xl      { padding-top: var(--space-xl); }
+.mt-xxl     { padding-top: var(--space-xxl); }
+.mt-section { padding-top: var(--space-section); }
+
+/* --- Bottom Padding Utilities --- */
+.mb-xxs     { padding-bottom: var(--space-xxs); }
+.mb-xs      { padding-bottom: var(--space-xs); }
+.mb-s       { padding-bottom: var(--space-s); }
+.mb-m       { padding-bottom: var(--space-m); }
+.mb-l       { padding-bottom: var(--space-l); }
+.mb-xl      { padding-bottom: var(--space-xl); }
+.mb-xxl     { padding-bottom: var(--space-xxl); }
+.mb-section { padding-bottom: var(--space-section); }
