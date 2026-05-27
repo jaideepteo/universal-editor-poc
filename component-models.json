@@ -312,16 +312,16 @@
       {
         "component": "select",
         "name": "cta_linkTarget",
-        "label": "Open Link in new tab ?",
+        "label": "Link target",
         "value": "",
         "valueType": "string",
         "options": [
           {
-            "name": "Yes",
+            "name": "New tab",
             "value": "_blank"
           },
           {
-            "name": "No",
+            "name": "Self",
             "value": "_self"
           }
         ]
