@@ -49,7 +49,8 @@
         "format": [
           "bold",
           "italic",
-          "underline"
+          "underline",
+          "strike"
         ],
         "alignment": [
           "left",
@@ -57,9 +58,9 @@
           "right",
           "justify"
         ],
-        "list": [
-          "bullet_list",
-          "ordered_list"
+        "direction": [
+          "rtl",
+          "ltr"
         ],
         "indentation": [
           "indent",
@@ -67,23 +68,35 @@
         ],
         "blocks": [
           "paragraph",
+          "h1",
           "h2",
           "h3",
           "h4",
           "h5",
+          "h6",
           "code_block"
+        ],
+        "list": [
+          "bullet_list",
+          "ordered_list"
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
+        ],
+        "sr_script": [
+          "superscript",
+          "subscript"
+        ],
+        "editor": [
+          "removeformat"
         ],
         "sections": [
-          "blocks",
           "format",
           "alignment",
-          "indentation",
-          "list",
-          "insert"
+          "list"
         ]
       },
       "actions": {
@@ -94,7 +107,10 @@
         "unlink": {
           "label": "Remove Link"
         }
-      }
+      },
+      "components": [
+        "new-text"
+      ]
     }
   }
 ]

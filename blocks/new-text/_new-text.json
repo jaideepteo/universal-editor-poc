@@ -245,13 +245,16 @@
       "id": "new-text",
       "rte": {
         "toolbar": {
-          "format": ["bold","italic","underline"],
+          "format": ["bold", "italic", "underline", "strike"],
           "alignment": ["left", "center", "right", "justify"],
-          "list": ["bullet_list","ordered_list"],
+          "direction": ["rtl", "ltr"],
           "indentation": ["indent", "outdent"],
-          "blocks": ["paragraph", "h2", "h3", "h4", "h5", "code_block"],
-          "insert": ["link", "unlink"],
-          "sections": ["blocks","format","alignment","indentation","list","insert"]
+          "blocks": ["paragraph", "h1", "h2", "h3", "h4", "h5", "h6", "code_block"],
+          "list": ["bullet_list", "ordered_list"],
+          "insert": ["link", "unlink", "image", "special_characters"],
+          "sr_script": ["superscript", "subscript"],
+          "editor": ["removeformat"],
+          "sections": ["format", "alignment", "list"]
         },
         "actions": {
           "link": {
@@ -261,7 +264,10 @@
           "unlink": {
             "label": "Remove Link"
           }
-        }
+        },
+        "components": [
+      "new-text"
+    ]
       }
     }
   ]
