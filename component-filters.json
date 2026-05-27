@@ -86,11 +86,7 @@
           "insert"
         ]
       },
-      "actions": {
-        "link": {
-          "hideTarget": false
-        }
-      }
+      "actions": {}
     }
   }
 ]
