@@ -254,6 +254,9 @@
           "sections": ["blocks","format","alignment","indentation","list","insert"]
         },
         "actions": {
+          "link": {
+            "hideTarget": false
+          }
         }
       }
     }
