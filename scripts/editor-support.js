@@ -31,42 +31,7 @@ async function applyChanges(event) {
   // load dompurify
   await loadScript(`${window.hlx.codeBasePath}/scripts/dompurify.min.js`);
 
-  
-const config = {
-  USE_PROFILES: { html: true },
-  ADD_ATTR: ['target', 'rel', 'style'],
-};
-
-// Allow target only for safe values & enforce rel
-window.DOMPurify.addHook('afterSanitizeAttributes', (node) => {
-  if (node.tagName === 'A') {
-    const target = node.getAttribute('target');
-    if (target && target !== '_blank') {
-      node.removeAttribute('target');
-    }
-    if (node.getAttribute('target') === '_blank') {
-      // Ensure security best practice
-      const rel = (node.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
-      ['noopener', 'noreferrer'].forEach((v) => { if (!rel.includes(v)) rel.push(v); });
-      node.setAttribute('rel', rel.join(' '));
-    }
-  }
-
-  // Restrict style to text-align only
-  if (node.hasAttribute && node.hasAttribute('style')) {
-    const style = node.getAttribute('style') || '';
-    const match = style.match(/text-align\s*:\s*(left|right|center|justify)\s*;?/i);
-    if (match) {
-      node.setAttribute('style', `text-align: ${match[1].toLowerCase()};`);
-    } else {
-      node.removeAttribute('style');
-    }
-  }
-});
-
-const sanitizedContent = window.DOMPurify.sanitize(content, config);
-
-  //const sanitizedContent = window.DOMPurify.sanitize(content, { USE_PROFILES: { html: true } });
+  const sanitizedContent = window.DOMPurify.sanitize(content, { USE_PROFILES: { html: true } });
   const parsedUpdate = new DOMParser().parseFromString(sanitizedContent, 'text/html');
   const element = document.querySelector(`[data-aue-resource="${resource}"]`);
 
