@@ -255,6 +255,7 @@
         },
         "actions": {
           "link": {
+            "label": "Insert Link1",
             "hideTarget": false
           }
         }
