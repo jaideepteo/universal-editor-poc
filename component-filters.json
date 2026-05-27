@@ -88,8 +88,11 @@
       },
       "actions": {
         "link": {
-          "label": "Insert Link1",
+          "label": "Insert Link",
           "hideTarget": false
+        },
+        "unlink": {
+          "label": "Remove Link"
         }
       }
     }
