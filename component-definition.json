@@ -173,6 +173,21 @@
           }
         },
         {
+          "title": "New Image",
+          "id": "new-image",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "New Image",
+                  "model": "new-image"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "New Text",
           "id": "new-text",
           "plugins": {
