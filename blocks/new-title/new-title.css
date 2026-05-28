@@ -1,13 +1,26 @@
 .new-title
 {
     --font-weight-title: var(--block-fw, --heading-font-weight);
-
-    h1{
+    
+    .title__heading{
         color: var(--block-text-color, #fff);
         text-align: var(--block-text-align, left);
         font-weight: var(--font-weight-title, 700);
         font-size: var(--heading-font-size, 84px);
         line-height: var(--heading-line-height, 84px);
+    }
+    
+    .title__link{
+        color: inherit;
+        text-align: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+    
+    .title__link:hover
+    {
+        text-decoration-thickness:2px;
     }
 }
 
