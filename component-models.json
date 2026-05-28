@@ -255,6 +255,226 @@
     ]
   },
   {
+    "id": "new-text",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Properties",
+        "value": "",
+        "name": "properties"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description"
+      },
+      {
+        "component": "tab",
+        "label": "Styles",
+        "name": "stylesTab"
+      },
+      {
+        "component": "select",
+        "name": "classes_marginTop",
+        "label": "Margin Top",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Select Margin Top",
+            "value": ""
+          },
+          {
+            "name": "XXS",
+            "value": "mt-xxs"
+          },
+          {
+            "name": "XS",
+            "value": "mt-xs"
+          },
+          {
+            "name": "S",
+            "value": "mt-s"
+          },
+          {
+            "name": "M",
+            "value": "mt-m"
+          },
+          {
+            "name": "L",
+            "value": "mt-l"
+          },
+          {
+            "name": "XL",
+            "value": "mt-xl"
+          },
+          {
+            "name": "XXL",
+            "value": "mt-xxl"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_marginBottom",
+        "label": "Margin Bottom",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Select Margin Bottom",
+            "value": ""
+          },
+          {
+            "name": "XXS",
+            "value": "mb-xxs"
+          },
+          {
+            "name": "XS",
+            "value": "mb-xs"
+          },
+          {
+            "name": "S",
+            "value": "mb-s"
+          },
+          {
+            "name": "M",
+            "value": "mb-m"
+          },
+          {
+            "name": "L",
+            "value": "mb-l"
+          },
+          {
+            "name": "XL",
+            "value": "mb-xl"
+          },
+          {
+            "name": "XXL",
+            "value": "mb-xxl"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_pSize",
+        "label": "Paragraph Size",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Select Paragraph Size",
+            "value": ""
+          },
+          {
+            "name": "XXL",
+            "value": "ps-xxl"
+          },
+          {
+            "name": "XL",
+            "value": "ps-xl"
+          },
+          {
+            "name": "L",
+            "value": "ps-l"
+          },
+          {
+            "name": "M",
+            "value": "ps-m"
+          },
+          {
+            "name": "S",
+            "value": "ps-s"
+          },
+          {
+            "name": "XS",
+            "value": "ps-xs"
+          },
+          {
+            "name": "XXS",
+            "value": "ps-xxs"
+          },
+          {
+            "name": "Stat",
+            "value": "ps-stat"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_fontWeight",
+        "label": "Font Weight",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Select Font Weight",
+            "value": ""
+          },
+          {
+            "name": "Light",
+            "value": "font-light"
+          },
+          {
+            "name": "Semi Bold",
+            "value": "font-semibold"
+          },
+          {
+            "name": "Bold",
+            "value": "font-bold"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_color",
+        "label": "Text Color",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Select Color",
+            "value": ""
+          },
+          {
+            "name": "Morning White",
+            "value": "color-morning-white"
+          },
+          {
+            "name": "Sunrise Cream",
+            "value": "color-sunrise-cream"
+          },
+          {
+            "name": "Sunrise Gold",
+            "value": "color-sunrise-gold"
+          },
+          {
+            "name": "Evening(800)",
+            "value": "color-evening800"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_transform",
+        "label": "Transform",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Select Transform",
+            "value": ""
+          },
+          {
+            "name": "Uppercase",
+            "value": "transform-uppercase"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "new-title",
     "fields": [
       {
