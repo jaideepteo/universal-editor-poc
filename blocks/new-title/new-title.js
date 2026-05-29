@@ -31,7 +31,7 @@ export default function decorate(block) {
       // Inject the accessible hidden span to alert screen readers
       if (target === '_blank') {
         const srSpan = document.createElement('span');
-        srSpan.className = 'title__screen-reader-only';
+        srSpan.className = 'screen-reader-only';
         srSpan.textContent = ' (opens in a new tab)';
         ctaLink.appendChild(srSpan);
       }
