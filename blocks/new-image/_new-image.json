@@ -26,17 +26,34 @@
           "label": "Asset",
           "value": "",
           "name": "asset"
-        }, 
+        },  
         {
           "component": "checkbox-group",
           "label": "Inherit Featured Image From Page",
-          "name": "imageInheritFeaturedImage",
+          "name": "imageInherit_FeaturedImage",
           "description": "Use the featured image defined in the properties of the current page.",
           "valueType": "string[]",
           "value": [],
           "options": [
             { "name": "Yes", "value": "yes" }
           ]
+        },
+        {
+          "component": "checkbox-group",
+          "label": "Inherit Alternative Text From Page",
+          "name": "imageInherit_AltText",
+          "description": "Use the alternative text defined in the page properties.",
+          "valueType": "string[]",
+          "value": [],
+          "options": [
+            { "name": "Yes", "value": "yes" }
+          ],
+          "condition": {
+            "in": [
+              "yes",
+              { "var": "imageInherit_FeaturedImage"}
+            ]
+          }
         },
         {
           "component": "reference",
@@ -47,7 +64,7 @@
             "!": {
               "in": [
                 "yes",
-                { "var": "imageInheritFeaturedImage" }
+                { "var": "imageInherit_FeaturedImage"}
               ]
             }
           }
@@ -55,18 +72,17 @@
         {
           "component": "text",
           "name": "imageAlt",
-          "label": "Alt Text"
-        },
-         {
-          "component": "checkbox-group",
-          "label": "Inherit Alternative Text From Page",
-          "name": "image_InheritAltText",
-          "description": "Use the alternative text defined in the page properties.",
-          "valueType": "string[]",
+          "label": "Alternative text for accessibility",
+          "valueType": "string",
           "value": "",
-          "options": [
-            { "name": "Yes", "value": "yes" }
-          ]
+          "condition": {
+            "!": {
+              "in": [
+                "yes",
+                { "var": "imageInherit_FeaturedImage"}
+              ]
+            }
+          }
         },
         {
           "component": "text",
