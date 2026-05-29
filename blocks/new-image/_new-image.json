@@ -79,7 +79,7 @@
             "!": {
               "in": [
                 "yes",
-                { "var": "imageInherit_FeaturedImage"}
+                { "var": "imageInherit_AltText"}
               ]
             }
           }
