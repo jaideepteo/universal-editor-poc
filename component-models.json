@@ -264,15 +264,53 @@
         "name": "asset"
       },
       {
+        "component": "checkbox-group",
+        "label": "Inherit Featured Image From Page",
+        "name": "imageInheritFeaturedImage",
+        "description": "Use the featured image defined in the properties of the current page.",
+        "valueType": "string[]",
+        "value": [],
+        "options": [
+          {
+            "name": "Yes",
+            "value": "yes"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
-        "multi": false
+        "multi": false,
+        "condition": {
+          "!": {
+            "in": [
+              "yes",
+              {
+                "var": "imageInheritFeaturedImage"
+              }
+            ]
+          }
+        }
       },
       {
         "component": "text",
         "name": "imageAlt",
         "label": "Alt Text"
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Inherit Alternative Text From Page",
+        "name": "image_InheritAltText",
+        "description": "Use the alternative text defined in the page properties.",
+        "valueType": "string[]",
+        "value": "",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "yes"
+          }
+        ]
       },
       {
         "component": "text",
