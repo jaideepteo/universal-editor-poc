@@ -260,8 +260,7 @@
       {
         "component": "tab",
         "label": "Properties",
-        "value": "",
-        "name": "properties"
+        "name": "propertiesTab"
       },
       {
         "component": "text",
@@ -295,7 +294,7 @@
       {
         "component": "tab",
         "label": "Accessibility",
-        "name": "stylesTab"
+        "name": "AccessibilityTab"
       },
       {
         "component": "text",
