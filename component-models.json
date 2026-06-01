@@ -45,7 +45,6 @@
       {
         "component": "text",
         "name": "title",
-        "description": "test desc",
         "label": "Title"
       },
       {
