@@ -64,7 +64,8 @@
         "fragment",
         "logo",
         "new-title",
-        "new-text"
+        "new-text",
+        "new-button"
       ]
     }
   ]
