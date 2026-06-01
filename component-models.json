@@ -357,11 +357,11 @@
             "value": "text-left"
           },
           {
-            "name": "Right",
+            "name": "Center",
             "value": "text-center"
           },
           {
-            "name": "Center",
+            "name": "Right",
             "value": "text-right"
           }
         ]
@@ -374,7 +374,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Margin Top",
+            "name": "None",
             "value": ""
           },
           {
@@ -415,7 +415,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Margin Bottom",
+            "name": "None",
             "value": ""
           },
           {
@@ -872,11 +872,11 @@
           },
           {
             "name": "Right",
-            "value": "text-center"
+            "value": "text-right"
           },
           {
             "name": "Center",
-            "value": "text-right"
+            "value": "text-center"
           }
         ]
       },

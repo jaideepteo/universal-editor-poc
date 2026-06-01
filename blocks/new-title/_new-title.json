@@ -220,11 +220,11 @@
             },
             {
               "name": "Right",
-              "value": "text-center"
+              "value": "text-right"
             },
             {
               "name": "Center",
-              "value": "text-right"
+              "value": "text-center"
             }
           ]
         },
