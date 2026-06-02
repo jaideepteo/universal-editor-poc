@@ -255,6 +255,202 @@
     ]
   },
   {
+    "id": "new-button",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Properties",
+        "name": "propertiesTab"
+      },
+      {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "aem-content",
+        "name": "cta_link",
+        "label": "Link",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "cta_linkTarget",
+        "label": "Link target",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "New tab",
+            "value": "_blank"
+          },
+          {
+            "name": "Self",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "tab",
+        "label": "Accessibility",
+        "name": "AccessibilityTab"
+      },
+      {
+        "component": "text",
+        "name": "label",
+        "value": "",
+        "description": "Value of an aria-label attribute for the button. Useful if the visual button text is not very descriptive.",
+        "label": "Label"
+      },
+      {
+        "component": "tab",
+        "label": "Styles",
+        "name": "stylesTab"
+      },
+      {
+        "component": "select",
+        "name": "classes_variant",
+        "label": "Variant",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "variant-primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "varianty-secondary"
+          },
+          {
+            "name": "Tertiary",
+            "value": "variant-tertiary"
+          },
+          {
+            "name": "Link",
+            "value": "variant-link"
+          },
+          {
+            "name": "Icon",
+            "value": "variant-icon"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_alignment",
+        "label": "Alignment",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "Left",
+            "value": "text-left"
+          },
+          {
+            "name": "Center",
+            "value": "text-center"
+          },
+          {
+            "name": "Right",
+            "value": "text-right"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_marginTop",
+        "label": "Margin Top",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "XXS",
+            "value": "mt-xxs"
+          },
+          {
+            "name": "XS",
+            "value": "mt-xs"
+          },
+          {
+            "name": "S",
+            "value": "mt-s"
+          },
+          {
+            "name": "M",
+            "value": "mt-m"
+          },
+          {
+            "name": "L",
+            "value": "mt-l"
+          },
+          {
+            "name": "XL",
+            "value": "mt-xl"
+          },
+          {
+            "name": "XXL",
+            "value": "mt-xxl"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "classes_marginBottom",
+        "label": "Margin Bottom",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "XXS",
+            "value": "mb-xxs"
+          },
+          {
+            "name": "XS",
+            "value": "mb-xs"
+          },
+          {
+            "name": "S",
+            "value": "mb-s"
+          },
+          {
+            "name": "M",
+            "value": "mb-m"
+          },
+          {
+            "name": "L",
+            "value": "mb-l"
+          },
+          {
+            "name": "XL",
+            "value": "mb-xl"
+          },
+          {
+            "name": "XXL",
+            "value": "mb-xxl"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "new-text",
     "fields": [
       {
@@ -676,11 +872,11 @@
           },
           {
             "name": "Right",
-            "value": "text-center"
+            "value": "text-right"
           },
           {
             "name": "Center",
-            "value": "text-right"
+            "value": "text-center"
           }
         ]
       },
