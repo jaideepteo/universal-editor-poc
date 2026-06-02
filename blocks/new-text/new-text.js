@@ -1,7 +1,6 @@
 export default function decorate(block) {
   // Find the rich-text element that holds the author's content
   const richTextContainer = block.querySelector('[data-aue-type="richtext"]');
-  
   // If the content element is missing, stop the code here to avoid errors
   if (!richTextContainer) {
     return;
