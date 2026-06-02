@@ -80,7 +80,7 @@
           "valueType": "string",
           "options": [
             {
-              "name": "None",
+              "name": "Select",
               "value": ""
             },
             {
