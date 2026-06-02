@@ -476,7 +476,6 @@
         "component": "aem-content",
         "name": "cta_link",
         "label": "Link",
-        "rootPath": "/content/genpact",
         "valueType": "string"
       },
       {
@@ -565,7 +564,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Margin Top",
+            "name": "None",
             "value": ""
           },
           {
@@ -606,7 +605,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Margin Bottom",
+            "name": "None",
             "value": ""
           },
           {
@@ -647,65 +646,65 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Paragraph Size",
+            "name": "None",
             "value": ""
           },
           {
             "name": "XXL",
-            "value": "ps-xxl"
+            "value": "text-body-xxl"
           },
           {
             "name": "XL",
-            "value": "ps-xl"
+            "value": "text-body-xl"
           },
           {
             "name": "L",
-            "value": "ps-l"
+            "value": "text-body-l"
           },
           {
             "name": "M",
-            "value": "ps-m"
+            "value": "text-body-m"
           },
           {
             "name": "S",
-            "value": "ps-s"
+            "value": "text-body-s"
           },
           {
             "name": "XS",
-            "value": "ps-xs"
+            "value": "text-body-xs"
           },
           {
             "name": "XXS",
-            "value": "ps-xxs"
+            "value": "text-body-xxs"
           },
           {
             "name": "Stat",
-            "value": "ps-stat"
+            "value": "text-heading-stat"
           }
         ]
       },
       {
         "component": "select",
         "name": "classes_fontWeight",
-        "label": "Font Weight",
+        "label": "Font weight",
         "value": "",
         "valueType": "string",
         "options": [
           {
-            "name": "Select Font Weight",
+            "name": "None",
             "value": ""
           },
           {
             "name": "Light",
-            "value": "font-light"
+            "value": "fw-light"
           },
           {
             "name": "Semi Bold",
-            "value": "font-semibold"
+            "value": "fw-semibold"
           },
           {
             "name": "Bold",
-            "value": "font-bold"
+            "value": "fw-bold"
           }
         ]
       },
@@ -717,24 +716,24 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Color",
+            "name": "None",
             "value": ""
           },
           {
             "name": "Morning White",
-            "value": "color-morning-white"
+            "value": "text-morning-white"
           },
           {
             "name": "Sunrise Cream",
-            "value": "color-sunrise-cream"
+            "value": "text-sunrise-cream"
           },
           {
             "name": "Sunrise Gold",
-            "value": "color-sunrise-gold"
+            "value": "text-sunrise-gold"
           },
           {
             "name": "Evening(800)",
-            "value": "color-evening800"
+            "value": "text-evening-800"
           }
         ]
       },
@@ -746,7 +745,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Transform",
+            "name": "None",
             "value": ""
           },
           {
