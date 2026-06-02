@@ -181,7 +181,7 @@
         {
           "component": "select",
           "name": "classes_fontWeight",
-          "label": "Font Weight",
+          "label": "Font weight",
           "value": "",
           "valueType": "string",
           "options": [
@@ -219,12 +219,12 @@
               "value": "text-left"
             },
             {
-              "name": "Right",
-              "value": "text-right"
-            },
-            {
               "name": "Center",
               "value": "text-center"
+            },
+            {
+              "name": "Right",
+              "value": "text-right"
             }
           ]
         },
@@ -236,7 +236,7 @@
           "valueType": "string",
           "options": [
             {
-              "name": "Select Margin Top",
+              "name": "None",
               "value": ""
             },
             {
@@ -277,7 +277,7 @@
           "valueType": "string",
           "options": [
             {
-              "name": "Select Margin Bottom",
+              "name": "None",
               "value": ""
             },
             {
