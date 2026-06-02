@@ -65,11 +65,8 @@
         "logo",
         "new-title",
         "new-text",
-<<<<<<< HEAD
-        "new-button"
-=======
+        "new-button",
         "new-image"
->>>>>>> 51dad11086e66bfb6e33b322e083828f8857636e
       ]
     }
   ]
