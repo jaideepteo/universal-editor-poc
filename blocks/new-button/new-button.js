@@ -1,11 +1,9 @@
 export default function decorate(block) {
- // 1. Find the author-entered text and accessibility label elements
+  // 1. Find the author-entered text and accessibility label elements
   const textEl = block.querySelector('[data-aue-prop="text"]');
   const labelEl = block.querySelector('[data-aue-prop="label"]');
-  
   // 2. Find the link anchor nested inside the button container
   const linkAnchor = block.querySelector('.button-container a');
-  
   // 3. Extract the target value (_blank or _self) from the next paragraph element
   let targetValue = '_self';
   if (linkAnchor && linkAnchor.closest('p')) {
@@ -20,7 +18,7 @@ export default function decorate(block) {
   const buttonHref = linkAnchor ? linkAnchor.getAttribute('href') : '#';
   const accessibilityLabel = labelEl ? labelEl.textContent.trim() : '';
 
- // 5. Create the clean, semantic anchor element for the final output
+  // 5. Create the clean, semantic anchor element for the final output
   const anchor = document.createElement('a');
   anchor.className = 'new-button__link';
   anchor.href = buttonHref;
