@@ -15,6 +15,7 @@
   --color-secondary-first-light-03: #adb1ac;
   --color-secondary-sunrise-white: #fffaf4;
   --color-secondary-sunrise-cream: #fff2df;
+  --color-evening-800: #c0c0c0;
 
 /* -------- Font weights -------- */
   --fw-light: 300;
@@ -462,6 +463,9 @@ main .section.highlight {
   --block-text-color: var(--color-secondary-sunrise-cream);
 }
 
+.text-evening-800 {
+  --block-text-color: var(--color-evening-800);
+}
 
 /* Background colors */
 
@@ -620,6 +624,19 @@ main .section.highlight {
   --label-font-size: var(--label-xxs-font-size);
   --label-letter-spacing: var(--label-xxs-letter-spacing);
   --label-line-height: var(--label-xxs-line-height);
+}
+
+/* --- Text transformation --- */
+.transform-uppercase {
+  --text-transform: uppercase;
+}
+
+.transform-lowercase {
+  --text-transform: lowercase;
+}
+
+.transform-capitalize {
+  --text-transform: capitalize;
 }
 
 /* --- Top Padding Utilities --- */

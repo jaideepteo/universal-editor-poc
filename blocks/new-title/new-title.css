@@ -1,6 +1,6 @@
 .new-title
 {
-    --font-weight-title: var(--block-fw, --heading-font-weight);
+    --font-weight-title: var(--block-fw, var(--heading-font-weight, 700));
     
     .title__heading{
         color: var(--block-text-color, #fff);

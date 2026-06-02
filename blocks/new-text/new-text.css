@@ -1,0 +1,12 @@
+.new-text
+{
+    .new-text__content p
+    {
+        color: var(--block-text-color, --color-secondary-sunrise-white);
+        text-align: var(--block-text-align, left);
+        font-weight: var(--body-font-weight, 400);
+        font-size: var(--body-font-size, 18px);
+        line-height: var(--body-line-height, 24px);
+        text-transform: var(--text-transform, initial);
+    }
+}
