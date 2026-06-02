@@ -219,12 +219,12 @@
               "value": "text-left"
             },
             {
-              "name": "Right",
-              "value": "text-right"
-            },
-            {
               "name": "Center",
               "value": "text-center"
+            },
+            {
+              "name": "Right",
+              "value": "text-right"
             }
           ]
         },
