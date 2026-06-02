@@ -211,7 +211,7 @@ h2 {
   font-weight: var(--fw-bold);
   font-size: var(--heading-l-font-size);
   line-height: var(--heading-l-line-height);
-  margin: 20px 0 20px; 
+  margin: 20px 0; 
 }
 
 h3 {
