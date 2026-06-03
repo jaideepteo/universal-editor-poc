@@ -34,7 +34,6 @@ export default function decorate(block) {
   }
 
   anchor.append(picture);
-
   block.textContent = '';
   const wrapper = document.createElement('div');
   wrapper.className = 'image-container';
