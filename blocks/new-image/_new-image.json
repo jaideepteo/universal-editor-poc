@@ -44,7 +44,6 @@
           "component": "aem-content",
           "name": "cta_link",
           "label": "Link",
-          "rootPath": "/content/genpact",
           "valueType": "string"
         },
         {
