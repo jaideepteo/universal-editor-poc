@@ -1,0 +1,5 @@
+.new-button__link
+{
+    color: var(--block-text-color, #161916);
+    background-color: var(--block-bg-color, #ff4f59);
+}

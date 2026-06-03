@@ -316,7 +316,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "None",
+            "name": "Select",
             "value": ""
           },
           {
@@ -919,7 +919,7 @@
       {
         "component": "select",
         "name": "classes_fontWeight",
-        "label": "Font Weight",
+        "label": "Font weight",
         "value": "",
         "valueType": "string",
         "options": [
@@ -974,7 +974,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Margin Top",
+            "name": "None",
             "value": ""
           },
           {
@@ -1015,7 +1015,7 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Select Margin Bottom",
+            "name": "None",
             "value": ""
           },
           {
