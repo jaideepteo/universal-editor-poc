@@ -6,7 +6,6 @@ export default function decorate(block) {
   const labelEl = block.children[2]?.querySelector('p');
   const targetValue = targetEl?.textContent.trim() || '_self';
 
-
   // 2. Get the raw text values or set fallback defaults
   const buttonText = textEl ? textEl.textContent.trim() : 'Button';
   const buttonHref = linkAnchor?.getAttribute('href') || '#';

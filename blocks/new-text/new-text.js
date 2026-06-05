@@ -1,7 +1,7 @@
 export default function decorate(block) {
   // Find the rich-text element that holds the author's content
   const valueDiv = [...block.children];
-  let richTextContainer = valueDiv[0]?.children[0];
+  const richTextContainer = valueDiv[0]?.children[0];
   // If the content element is missing, stop the code here to avoid errors
   if (!richTextContainer) {
     return;
