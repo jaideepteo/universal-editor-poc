@@ -31,7 +31,22 @@ async function applyChanges(event) {
   // load dompurify
   await loadScript(`${window.hlx.codeBasePath}/scripts/dompurify.min.js`);
 
-  const sanitizedContent = window.DOMPurify.sanitize(content, { USE_PROFILES: { html: true } });
+  
+window.DOMPurify.addHook('afterSanitizeAttributes', (node) => {
+  if (node.hasAttribute('style')) {
+    const textAlign = node.style.textAlign;
+    node.removeAttribute('style');
+    if (textAlign) {
+      node.style.textAlign = textAlign;
+    }
+  }
+});
+
+const sanitizedContent = window.DOMPurify.sanitize(content, {
+  USE_PROFILES: { html: true },
+  ADD_ATTR: ['style', 'target'],
+});
+window.DOMPurify.removeAllHooks();
   const parsedUpdate = new DOMParser().parseFromString(sanitizedContent, 'text/html');
   const element = document.querySelector(`[data-aue-resource="${resource}"]`);
 
