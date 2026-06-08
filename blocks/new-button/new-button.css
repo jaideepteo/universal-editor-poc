@@ -1,5 +1,115 @@
-.new-button__link
-{
-    color: var(--block-text-color, #161916);
-    background-color: var(--block-bg-color, #ff4f59);
+.new-button {
+    .new-button__link {
+        background-color: var(--button-bg-color, transparent);
+        border: 2px solid var(--button-border-color, transparent);
+        border-radius: var(--button-border-radius, 50px);
+        color: var(--button-text-color, --color-primary-midnight);
+        cursor: pointer;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: .48px;
+        line-height: 20px;
+        padding: var(--button-padding, 8px 32px);
+        text-align: center;
+        text-decoration: var(--button-text-decoration, none);
+        text-transform: var(--button-txt-transform, uppercase);
+        text-underline-offset: .25em;
+        text-wrap: nowrap;
+        transition: background-color .3s, border .3s, color .3s;
+        width: fit-content;
+
+        &:active {
+            background-color: var(--button-active-bg-color);
+            border-color: var(--button-active-border-color, transparent);
+            color: var(--button-active-fg-color);
+        }
+
+        &:disabled {
+            background-color: var(--button-disabled-bg-color);
+            border-color: var(--button-disabled-border-color, transparent);
+            color: var(--button-disabled-fg-color);
+        }
+
+        &:focus,
+        &:focus-visible {
+            background-color: var(--button-focus-bg-color);
+            border: 2px dashed var(--button-focus-border-color);
+            box-shadow: 0 0 5px 3px var(--button-focus-box-shadow-color);
+            color: var(--button-focus-fg-color);
+            outline: none;
+        }
+
+        &:hover {
+            background-color: var(--button-hover-bg-color);
+            color: var(--button-hover-fg-color);
+            border-color: var(--button-hover-border-color, transparent);
+        }
+    }
+
+    &.btn-primary {
+        --button-bg-color: var(--color-primary-coral);
+        --button-text-color: var(--color-primary-midnight);
+        --button-active-bg-color: #ff727a;
+        --button-active-fg-color: var(--color-primary-midnight);
+        --button-focus-bg-color: var(--color-primary-coral);
+        --button-focus-border-color: #c0c0c0;
+        --button-focus-box-shadow-color: var(--color-primary-coral);
+        --button-focus-fg-color: var(--color-primary-midnight);
+        --button-hover-bg-color: #ff727a;
+        --button-hover-fg-color: var(--color-primary-midnight);
+        --button-disabled-bg-color: #4a4a4a;
+        --button-disabled-fg-color: var(--color-secondary-first-light-02);
+    }
+
+    &.btn-secondary {
+        --button-bg-color: transparent;
+        --button-border-color: var(--color-primary-coral);
+        --button-text-color: var(--color-primary-coral);
+        --button-active-bg-color: #ff727a;
+        --button-active-border-color: #ff727a;
+        --button-active-fg-color: var(--color-primary-midnight);
+        --button-disabled-bg-color: transparent;
+        --button-disabled-border-color: #4a4a4a;
+        --button-disabled-fg-color: var(--color-secondary-first-light-02);
+        --button-focus-border-color: var(--color-primary-coral);
+        --button-focus-box-shadow-color: var(--color-primary-coral);
+        --button-focus-fg-color: var(--color-primary-coral);
+        --button-hover-bg-color: #ff727a;
+        --button-hover-border-color: #ff727a;
+        --button-hover-fg-color: var(--color-primary-midnight);
+    }
+
+    &.btn-tertiary {
+        --button-bg-color: transparent;
+        --button-border-color: var(--color-primary-coral);
+        --button-text-color: var(--color-primary-coral);
+        --button-text-decoration: underline;
+        --button-hover-bg-color: transparent;
+        --button-hover-fg-color: #ff727a;
+
+        --button-bg-color: transparent;
+        --button-border-color: transparent;
+        --button-border-radius: 8px;
+        --button-fg-color: var(--color-primary-coral);
+        --button-active-bg-color: transparent;
+        --button-active-fg-color: #ff727a;
+        --button-disabled-bg-color: transparent;
+        --button-disabled-fg-color: var(--color-secondary-first-light-02);
+        --button-focus-border-color: var(--color-primary-coral);
+        --button-focus-box-shadow-color: var(--color-primary-coral);
+        --button-focus-fg-color: var(--color-primary-coral);
+        --button-hover-bg-color: transparent;
+        --button-hover-fg-color: #ff727a;
+        --button-text-decoration: underline;
+        --button-padding: 8px 0;
+    }
+
+    &.btn-link {
+        --button-bg-color: transparent;
+        --button-border-color: var(--color-primary-coral);
+        --button-text-color: var(--color-primary-coral);
+        --button-text-decoration: underline;
+        --button-txt-transform: lowercase;
+    }
 }
