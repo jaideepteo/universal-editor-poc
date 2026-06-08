@@ -41,40 +41,83 @@
         },
         {
           "component": "select",
-          "name": "classes_indention",
-          "label": "Indention",
+          "name": "classes_marginTop",
+          "label": "Margin Top",
           "value": "",
           "valueType": "string",
           "options": [
             {
-              "name": "Left",
+              "name": "None",
+              "value": ""
+            },
+            {
+              "name": "XXS",
               "value": "mt-xxs"
             },
             {
-              "name": "Right",
+              "name": "XS",
               "value": "mt-xs"
             },
             {
-              "name": "Center",
+              "name": "S",
               "value": "mt-s"
+            },
+            {
+              "name": "M",
+              "value": "mt-m"
+            },
+            {
+              "name": "L",
+              "value": "mt-l"
+            },
+            {
+              "name": "XL",
+              "value": "mt-xl"
+            },
+            {
+              "name": "XXL",
+              "value": "mt-xxl"
             }
           ]
         },
         {
           "component": "select",
-          "name": "classes_linkType",
-          "label": "Link type",
+          "name": "classes_marginBottom",
+          "label": "Margin Bottom",
           "value": "",
           "valueType": "string",
           "options": [
-            
             {
-              "name": "New Tab",
+              "name": "None",
+              "value": ""
+            },
+            {
+              "name": "XXS",
               "value": "mb-xxs"
             },
             {
-              "name": "Same Tab",
+              "name": "XS",
               "value": "mb-xs"
+            },
+            {
+              "name": "S",
+              "value": "mb-s"
+            },
+            {
+              "name": "M",
+              "value": "mb-m"
+            },
+            {
+              "name": "L",
+              "value": "mb-l"
+            },
+            {
+              "name": "XL",
+              "value": "mb-xl"
+            },
+            {
+              "name": "XXL",
+              "value": "mb-xxl"
             }
           ]
         },
