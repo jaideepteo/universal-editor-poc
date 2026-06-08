@@ -4,7 +4,7 @@ export default function decorate(block) {
 
   // Determine if lazy loading should be explicitly disabled via block variant class
   const disableLazy = block.classList.contains('disable-lazyload');
-  
+
   if (!picture) return;
 
   // 1. Apply BEM class to the standard <img> tag inside the <picture>
