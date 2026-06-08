@@ -537,83 +537,39 @@
       },
       {
         "component": "select",
-        "name": "classes_marginTop",
-        "label": "Margin Top",
+        "name": "classes_indention",
+        "label": "Indention",
         "value": "",
         "valueType": "string",
         "options": [
           {
-            "name": "None",
-            "value": ""
-          },
-          {
-            "name": "XXS",
+            "name": "Left",
             "value": "mt-xxs"
           },
           {
-            "name": "XS",
+            "name": "Right",
             "value": "mt-xs"
           },
           {
-            "name": "S",
+            "name": "Center",
             "value": "mt-s"
-          },
-          {
-            "name": "M",
-            "value": "mt-m"
-          },
-          {
-            "name": "L",
-            "value": "mt-l"
-          },
-          {
-            "name": "XL",
-            "value": "mt-xl"
-          },
-          {
-            "name": "XXL",
-            "value": "mt-xxl"
           }
         ]
       },
       {
         "component": "select",
-        "name": "classes_marginBottom",
-        "label": "Margin Bottom",
+        "name": "classes_linkType",
+        "label": "Link type",
         "value": "",
         "valueType": "string",
         "options": [
           {
-            "name": "None",
-            "value": ""
-          },
-          {
-            "name": "XXS",
+            "name": "New Tab",
             "value": "mb-xxs"
           },
           {
-            "name": "XS",
+            "name": "Same Tab",
             "value": "mb-xs"
-          },
-          {
-            "name": "S",
-            "value": "mb-s"
-          },
-          {
-            "name": "M",
-            "value": "mb-m"
-          },
-          {
-            "name": "L",
-            "value": "mb-l"
-          },
-          {
-            "name": "XL",
-            "value": "mb-xl"
-          },
-          {
-            "name": "XXL",
-            "value": "mb-xxl"
           }
         ]
       },
