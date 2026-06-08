@@ -44,8 +44,7 @@
           "component": "checkbox",
           "name": "classes",
           "label": "Disable Lazy Loading",
-          "value": "disable-lazyload",
-          "uncheckedValue": ""
+          "value": "disable-lazyload"
         },
         {
           "component": "aem-content",
