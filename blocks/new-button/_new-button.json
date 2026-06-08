@@ -85,23 +85,19 @@
             },
             {
               "name": "Primary",
-              "value": "variant-primary"
+              "value": "btn-primary"
             },
             {
               "name": "Secondary",
-              "value": "varianty-secondary"
+              "value": "btn-secondary"
             },
             {
               "name": "Tertiary",
-              "value": "variant-tertiary"
+              "value": "btn-tertiary"
             },
              {
               "name": "Link",
-              "value": "variant-link"
-            },
-             {
-              "name": "Icon",
-              "value": "variant-icon"
+              "value": "btn-link"
             }
           ]
         },
