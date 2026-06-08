@@ -470,9 +470,10 @@
       },
       {
         "component": "boolean",
-        "name": "disableLazyload",
+        "name": "classes_disable-lazyload",
         "label": "Disable Lazy Loading",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "value": false
       },
       {
         "component": "aem-content",

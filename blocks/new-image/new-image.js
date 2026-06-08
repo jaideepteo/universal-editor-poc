@@ -2,9 +2,8 @@ export default function decorate(block) {
   const [imageRow, linkRow] = [...block.children];
   const picture = imageRow?.querySelector('picture');
 
-  // Fetch the boolean property directly from the Universal Editor dataset attribute
-  // Data attributes are stored as strings, so we explicitly check if it matches 'true'
-  const disableLazy = block.dataset.togglecheckbox === 'true';
+  // Determine if lazy loading should be explicitly disabled via block variant class
+  const disableLazy = block.classList.contains('disable-lazyload');
 
   if (!picture) return;
 
