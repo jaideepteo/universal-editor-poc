@@ -1,42 +1,50 @@
 export default function decorate(block) {
-  const rows = [...block.children];
-  const imageRow = rows[0];
+  const [imageRow, linkRow] = [...block.children];
   const picture = imageRow?.querySelector('picture');
-  const linkRow = rows[1];
-  const linkAnchor = linkRow?.querySelector('a');
-  const paragraphs = linkRow?.querySelectorAll('p') || [];
-  const targetText = paragraphs[1]?.textContent?.trim() || '_self';
 
-  // If no picture, stop
+  // Determine if lazy loading should be explicitly disabled via block variant class
+  const disableLazy = block.classList.contains('disable-lazyload');
+
   if (!picture) return;
 
-  // If no link, keep only image
+  // 1. Apply BEM class to the standard <img> tag inside the <picture>
+  const img = picture.querySelector('img');
+  if (img) {
+    img.classList.add('new-image__img');
+    if (disableLazy) {
+      img.removeAttribute('loading');
+      img.setAttribute('fetchpriority', 'high');
+    }
+  }
+
+  // Define the base structure container
+  const container = document.createElement('div');
+  container.className = 'new-image__container';
+
+  const linkAnchor = linkRow?.querySelector('a');
+
+  // Logic if no link exists: output only the image container
   if (!linkAnchor) {
-    block.textContent = '';
-    const wrapper = document.createElement('div');
-    wrapper.className = 'new-image__wrapper';
-    wrapper.append(picture);
-    block.append(wrapper);
+    container.append(picture);
+    block.replaceChildren(container);
     return;
   }
 
+  // 2. Extract link parameters and manage target window logic
   const href = linkAnchor.getAttribute('href') || '#';
+  const targetText = linkRow?.querySelectorAll('p')?.[1]?.textContent?.trim() || '_self';
+
   const anchor = document.createElement('a');
   anchor.href = href;
   anchor.className = 'new-image__link';
-
-  if (targetText) {
-    anchor.target = targetText;
-  }
+  anchor.target = targetText;
 
   if (targetText === '_blank') {
     anchor.rel = 'noopener noreferrer';
   }
 
+  // Construct the final wrapped link DOM structure
   anchor.append(picture);
-  block.textContent = '';
-  const wrapper = document.createElement('div');
-  wrapper.className = 'new-image__wrapper';
-  wrapper.append(anchor);
-  block.append(wrapper);
+  container.append(anchor);
+  block.replaceChildren(container);
 }

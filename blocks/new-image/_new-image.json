@@ -41,6 +41,13 @@
           "value": ""
         },
         {
+          "component": "checkbox",
+          "name": "classes",
+          "label": "Disable Lazy Loading",
+          "value": "disable-lazyload",
+          "uncheckedValue": ""
+        },
+        {
           "component": "aem-content",
           "name": "cta_link",
           "label": "Link",
