@@ -81,24 +81,7 @@
             },
             {
               "name": "Logo",
-              "value": "logo"
-            }
-          ]
-        },
-        {
-          "component": "select",
-          "name": "classes_sizing",
-          "label": "Sizing",
-          "value": "",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "None",
-              "value": ""
-            },
-            {
-              "name": "Image Actual Size",
-              "value": "image-actual-size"
+              "value": "img-variation-logo"
             }
           ]
         }

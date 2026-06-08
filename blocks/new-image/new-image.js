@@ -14,7 +14,7 @@ export default function decorate(block) {
   if (!linkAnchor) {
     block.textContent = '';
     const wrapper = document.createElement('div');
-    wrapper.className = 'image-container';
+    wrapper.className = 'new-image__wrapper';
     wrapper.append(picture);
     block.append(wrapper);
     return;
@@ -23,7 +23,7 @@ export default function decorate(block) {
   const href = linkAnchor.getAttribute('href') || '#';
   const anchor = document.createElement('a');
   anchor.href = href;
-  anchor.className = 'image-link';
+  anchor.className = 'new-image__link';
 
   if (targetText) {
     anchor.target = targetText;
@@ -36,7 +36,7 @@ export default function decorate(block) {
   anchor.append(picture);
   block.textContent = '';
   const wrapper = document.createElement('div');
-  wrapper.className = 'image-container';
+  wrapper.className = 'new-image__wrapper';
   wrapper.append(anchor);
   block.append(wrapper);
 }
