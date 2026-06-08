@@ -82,13 +82,6 @@
 
     &.btn-tertiary {
         --button-bg-color: transparent;
-        --button-border-color: var(--color-primary-coral);
-        --button-text-color: var(--color-primary-coral);
-        --button-text-decoration: underline;
-        --button-hover-bg-color: transparent;
-        --button-hover-fg-color: #ff727a;
-
-        --button-bg-color: transparent;
         --button-border-color: transparent;
         --button-border-radius: 8px;
         --button-fg-color: var(--color-primary-coral);
