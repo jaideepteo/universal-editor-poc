@@ -1,7 +1,7 @@
 export default function decorate(block) {
   // 1. Find the author-entered text and accessibility label and other values
   const textEl = block.children[0]?.querySelector('p');
-  const linkAnchor = block.children[1]?.querySelector('.button-container a');
+  const linkAnchor = block.children[1]?.querySelector('a');
   const targetEl = block.children[1]?.querySelector('p:not(.button-container)');
   const labelEl = block.children[2]?.querySelector('p');
   const targetValue = targetEl?.textContent.trim() || '_self';
