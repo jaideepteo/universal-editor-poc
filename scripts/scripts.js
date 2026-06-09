@@ -60,6 +60,7 @@ async function loadFonts() {
 
 function buildBreadcrumb(main) {
   if (window.location.pathname === '/') return;
+  if (main !== document.querySelector('main')) return;
   if (main.querySelector('.breadcrumb')) return;
 
   const section = main.querySelector(':scope > div');
@@ -77,7 +78,7 @@ function buildBreadcrumb(main) {
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks() {
+function buildAutoBlocks(main) {
   try {
     // TODO: add auto block, if needed
         buildBreadcrumb(main);

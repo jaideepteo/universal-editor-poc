@@ -42,7 +42,8 @@ function buildBreadcrumbItem(label, url, position, isActive) {
 }
 
 export default async function decorate(block) {
-  const pathSegments = window.location.pathname.split('/').filter(Boolean);
+  const pathSegments = window.location.pathname.split('/').filter(Boolean)
+    .filter((seg) => seg !== 'index');
 
   const nav = document.createElement('nav');
   nav.setAttribute('aria-label', 'Breadcrumb');
