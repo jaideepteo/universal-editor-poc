@@ -24,6 +24,12 @@
     ]
   },
   {
+    "id": "cards-logo",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
