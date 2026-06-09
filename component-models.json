@@ -153,6 +153,10 @@
     ]
   },
   {
+    "id": "breadcrumb",
+    "fields": []
+  },
+  {
     "id": "card",
     "fields": [
       {

@@ -58,6 +58,21 @@ async function loadFonts() {
   }
 }
 
+function buildBreadcrumb(main) {
+  if (window.location.pathname === '/') return;
+  if (main.querySelector('.breadcrumb')) return;
+
+  const section = main.querySelector(':scope > div');
+  if (!section) return;
+
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('breadcrumb', 'block');
+  wrapper.setAttribute('data-block-name', 'breadcrumb');
+  wrapper.setAttribute('data-block-status', '');
+
+  section.prepend(wrapper);
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -65,6 +80,8 @@ async function loadFonts() {
 function buildAutoBlocks() {
   try {
     // TODO: add auto block, if needed
+        buildBreadcrumb(main);
+
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
