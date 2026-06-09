@@ -83,36 +83,6 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Cards Logo",
-          "id": "cards-logo",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Cards Logo",
-                  "filter": "cards-logo"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Card1",
-          "id": "card1",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Card1",
-                  "model": "card1"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
@@ -258,6 +228,21 @@
                 "template": {
                   "name": "New Title",
                   "model": "new-title"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Partner Logo",
+          "id": "partner-logo",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Partner Logo",
+                  "model": "partner-logo"
                 }
               }
             }

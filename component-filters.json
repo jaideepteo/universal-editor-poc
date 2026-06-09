@@ -21,13 +21,7 @@
       "new-text",
       "new-button",
       "new-image",
-      "cards-logo"
-    ]
-  },
-  {
-    "id": "cards-logo",
-    "components": [
-      "card1"
+      "partner-logo"
     ]
   },
   {

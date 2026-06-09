@@ -153,54 +153,6 @@
     ]
   },
   {
-    "id": "card1",
-    "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alternative text for accessibility",
-        "valueType": "string",
-        "value": ""
-      },
-      {
-        "component": "boolean",
-        "name": "classes_disable-lazyload",
-        "label": "Disable Lazy Loading",
-        "valueType": "boolean",
-        "value": false
-      },
-      {
-        "component": "aem-content",
-        "name": "cta_link",
-        "label": "Link",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "cta_linkTarget",
-        "label": "Link target",
-        "value": "",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "New tab",
-            "value": "_blank"
-          },
-          {
-            "name": "Self",
-            "value": "_self"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
@@ -1079,6 +1031,37 @@
           {
             "name": "XXL",
             "value": "mb-xxl"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "partner-logo",
+    "fields": [
+      {
+        "component": "multifield",
+        "name": "logos",
+        "label": "Logos",
+        "valueType": "object",
+        "fields": [
+          {
+            "component": "reference",
+            "name": "image",
+            "label": "Logo Image",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "name": "alt",
+            "label": "Alt Text",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "name": "link",
+            "label": "Logo Link",
+            "valueType": "string"
           }
         ]
       }
