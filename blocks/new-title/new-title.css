@@ -5,9 +5,10 @@
     .title__heading{
         color: var(--block-text-color, #fff);
         text-align: var(--block-text-align, left);
-        font-weight: var(--font-weight-title, 700);
-        font-size: var(--heading-font-size, 84px);
-        line-height: var(--heading-line-height, 84px);
+        font-weight: var(--font-weight-title);
+        font-size: var(--heading-font-size);
+        line-height: var(--heading-line-height);
+        margin: 0;
     }
     
     .title__link{
