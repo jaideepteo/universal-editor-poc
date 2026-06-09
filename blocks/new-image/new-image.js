@@ -12,7 +12,7 @@ export default function decorate(block) {
   if (img) {
     img.classList.add('new-image__img');
     if (disableLazy) {
-      img.removeAttribute('loading');
+      img.setAttribute('loading', 'eager');
       img.setAttribute('fetchpriority', 'high');
     }
   }
