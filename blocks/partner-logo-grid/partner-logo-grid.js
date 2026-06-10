@@ -9,10 +9,12 @@ export default function decorate(block) {
     const picture = row.querySelector('picture');
     const img = row.querySelector('img');
     const existingLink = row.querySelector('a');
-    const href = existingLink?.getAttribute('href');
     const target = [...row.querySelectorAll('p')]
       .map((p) => p.textContent.trim())
       .find((t) => t === '_blank' || t === '_self');
+
+    // Strip whitespace (raw or %20-encoded) injected into hrefs containing commas.
+    const href = existingLink?.getAttribute('href')?.replace(/(\s|%20)+/g, '');
 
     if (!img) {
       ul.append(li);
