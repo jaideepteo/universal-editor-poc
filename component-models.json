@@ -1037,31 +1037,47 @@
     ]
   },
   {
+    "id": "partner-logo-grid",
+    "fields": []
+  },
+  {
     "id": "partner-logo",
     "fields": [
       {
-        "component": "multifield",
-        "name": "logos",
-        "label": "Logos",
-        "valueType": "object",
-        "fields": [
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Logo Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta_link",
+        "label": "Link URL",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "cta_linkTarget",
+        "label": "Link target",
+        "value": "",
+        "valueType": "string",
+        "options": [
           {
-            "component": "reference",
-            "name": "image",
-            "label": "Logo Image",
-            "valueType": "string"
+            "name": "New tab",
+            "value": "_blank"
           },
           {
-            "component": "text",
-            "name": "alt",
-            "label": "Alt Text",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "link",
-            "label": "Logo Link",
-            "valueType": "string"
+            "name": "Self",
+            "value": "_self"
           }
         ]
       }

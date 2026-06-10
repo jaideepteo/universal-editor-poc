@@ -21,7 +21,7 @@
       "new-text",
       "new-button",
       "new-image",
-      "partner-logo"
+      "partner-logo-grid"
     ]
   },
   {
@@ -100,5 +100,11 @@
         }
       }
     }
+  },
+  {
+    "id": "partner-logo-grid",
+    "components": [
+      "partner-logo"
+    ]
   }
 ]
