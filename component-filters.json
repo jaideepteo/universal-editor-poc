@@ -20,7 +20,8 @@
       "new-title",
       "new-text",
       "new-button",
-      "new-image"
+      "new-image",
+      "partner-logo-grid"
     ]
   },
   {
@@ -99,5 +100,11 @@
         }
       }
     }
+  },
+  {
+    "id": "partner-logo-grid",
+    "components": [
+      "partner-logo"
+    ]
   }
 ]

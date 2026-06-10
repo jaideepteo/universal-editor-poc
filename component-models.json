@@ -1035,5 +1035,52 @@
         ]
       }
     ]
+  },
+  {
+    "id": "partner-logo-grid",
+    "fields": []
+  },
+  {
+    "id": "partner-logo",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Logo Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text",
+        "value": ""
+      },
+      {
+        "component": "aem-content",
+        "name": "cta_link",
+        "label": "Link",
+        "rootPath": "/content/genpact",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "cta_linkTarget",
+        "label": "Link target",
+        "value": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "New tab",
+            "value": "_blank"
+          },
+          {
+            "name": "Self",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
   }
 ]

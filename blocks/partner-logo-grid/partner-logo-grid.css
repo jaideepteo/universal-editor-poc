@@ -1,0 +1,68 @@
+.partner-logo-grid-container {
+  background-color: #1a1a1a;
+}
+
+.partner-logo-grid-container .partner-logo-grid-wrapper {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.partner-logo-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.partner-logo-grid li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  min-height: 120px;
+}
+
+.partner-logo-grid li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.partner-logo-grid li a:hover {
+  opacity: 0.8;
+}
+
+.partner-logo-grid li picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.partner-logo-grid li img {
+  width: auto;
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+@media (width >= 900px) {
+  .partner-logo-grid-container .partner-logo-grid-wrapper {
+    padding: 64px 32px;
+  }
+
+  .partner-logo-grid ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .partner-logo-grid li {
+    min-height: 140px;
+    padding: 40px;
+  }
+}
