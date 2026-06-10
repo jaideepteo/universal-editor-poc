@@ -1,17 +1,18 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-    console.log("hi2")
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     moveInstrumentation(row, li);
 
-    const cells = [...row.children];
-    const img = cells[0]?.querySelector('img');
-    const alt = cells[1]?.textContent.trim();
-    const href = cells[2]?.textContent.trim();
-    const target = cells[3]?.textContent.trim();
+    const picture = row.querySelector('picture');
+    const img = row.querySelector('img');
+    const existingLink = row.querySelector('a');
+    const href = existingLink?.getAttribute('href');
+    const target = [...row.querySelectorAll('p')]
+      .map((p) => p.textContent.trim())
+      .find((t) => t === '_blank' || t === '_self');
 
     if (!img) {
       ul.append(li);
@@ -19,20 +20,20 @@ export default function decorate(block) {
     }
 
     img.loading = 'lazy';
-    if (alt) img.alt = alt;
+    const logo = picture || img;
 
     if (href) {
       const a = document.createElement('a');
       a.href = href;
-      a.title = alt || img.alt || '';
+      a.title = img.alt || '';
       if (target === '_blank') {
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
       }
-      a.append(img);
+      a.append(logo);
       li.append(a);
     } else {
-      li.append(img);
+      li.append(logo);
     }
     ul.append(li);
   });

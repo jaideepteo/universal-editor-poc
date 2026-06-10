@@ -37,11 +37,17 @@
   opacity: 0.8;
 }
 
+.partner-logo-grid li picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .partner-logo-grid li img {
   width: auto;
-  height: auto;
-  max-width: 200px;
-  max-height: 70px;
+  height: 60px;
+  max-width: 100%;
   object-fit: contain;
   filter: brightness(0) invert(1);
 }

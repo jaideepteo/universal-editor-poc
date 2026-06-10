@@ -55,11 +55,11 @@
           "value": ""
         },
         {
-          "component": "text",
-          "valueType": "string",
+          "component": "aem-content",
           "name": "cta_link",
-          "label": "Link URL",
-          "value": ""
+          "label": "Link",
+          "rootPath": "/content/genpact",
+          "valueType": "string"
         },
         {
           "component": "select",
