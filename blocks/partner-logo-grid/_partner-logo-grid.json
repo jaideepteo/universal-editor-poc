@@ -35,7 +35,30 @@
   "models": [
     {
       "id": "partner-logo-grid",
-      "fields": []
+      "fields": [
+        {
+          "component": "select",
+          "name": "desktopColumns",
+          "label": "Desktop Logos Column",
+          "description": "Select the number of logos to display per row on desktop viewports",
+          "value": "4",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "2 Logos",
+              "value": "2"
+            },
+            {
+              "name": "3 Logos",
+              "value": "3"
+            },
+            {
+              "name": "4 Logos",
+              "value": "4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "partner-logo",

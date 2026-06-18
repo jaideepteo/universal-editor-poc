@@ -1,68 +1,55 @@
-.partner-logo-grid-container {
-  background-color: #1a1a1a;
-}
-
-.partner-logo-grid-container .partner-logo-grid-wrapper {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-  padding: 40px 24px;
-}
-
-.partner-logo-grid ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.partner-logo-grid__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-}
-
-.partner-logo-grid li {
-  display: flex;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   align-items: center;
-  justify-content: center;
-  padding: 32px;
-  min-height: 120px;
+  justify-items: center;
 }
 
-.partner-logo-grid li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .partner-logo-grid__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.partner-logo-grid li a:hover {
-  opacity: 0.8;
-}
-
-.partner-logo-grid li picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-}
-
-.partner-logo-grid li img {
-  width: auto;
-  height: 60px;
-  max-width: 100%;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-}
-
-@media (width >= 900px) {
-  .partner-logo-grid-container .partner-logo-grid-wrapper {
-    padding: 64px 32px;
+@media (min-width: 1025px) {
+  .partner-logo-grid--cols-2 .partner-logo-grid__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .partner-logo-grid ul {
+  .partner-logo-grid--cols-3 .partner-logo-grid__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Default or explicit 4 Column fallback */
+  .partner-logo-grid--cols-4 .partner-logo-grid__list {
     grid-template-columns: repeat(4, 1fr);
   }
+}
 
-  .partner-logo-grid li {
-    min-height: 140px;
-    padding: 40px;
-  }
+.partner-logo-grid__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.partner-logo-grid__link {
+  text-decoration: none;
+}
+
+.partner-logo-grid__link:hover>* {
+  opacity: 0.7;
+}
+
+.partner-logo-grid__image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
