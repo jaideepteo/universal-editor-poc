@@ -5,17 +5,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (width >= 768px) and (width <= 1024px) {
   .partner-logo-grid__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1025px) {
+@media (width >= 1025px) {
   .partner-logo-grid--cols-2 .partner-logo-grid__list {
     grid-template-columns: repeat(2, 1fr);
   }
