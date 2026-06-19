@@ -1,7 +1,5 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default function decorate(block) {
-
   // Configure grid columns based on author selection
   const desktopCols = block.dataset.desktopColumns || '4';
   block.classList.add(`partner-logo-grid--cols-${desktopCols}`);
